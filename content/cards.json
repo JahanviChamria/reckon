@@ -1,0 +1,264 @@
+[
+  {
+    "id": "sp-moon-distance",
+    "topic": "space",
+    "type": "interactive",
+    "question": "How far is the Moon, really? Drag it to your guess.",
+    "widget": "moonDistance",
+    "params": {},
+    "source": "Earth-Moon mean distance 384,400 km; Earth diameter 12,742 km. NASA Moon Fact Sheet."
+  },
+  {
+    "id": "sp-sun-mass",
+    "topic": "space",
+    "type": "predict",
+    "prompt": "How much of the solar system's mass is the Sun?",
+    "options": ["About 75%", "About 90%", "About 99.9%"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 99.86, "unit": "%" },
+    "kicker": "The Sun holds 99.86% of the solar system's mass. Every planet and moon combined is rounding error.",
+    "source": "Sun is 99.86% of solar system mass. NASA Sun Fact Sheet."
+  },
+  {
+    "id": "sp-sun-delay",
+    "topic": "space",
+    "type": "concept",
+    "hook": "You see the Sun as it was 8 minutes ago.",
+    "body": "Light takes 8 minutes 20 seconds to cross the 150 million km to Earth. If the Sun vanished now, you would feel nothing until the darkness arrived.",
+    "source": "1 AU / speed of light = 499 s ≈ 8 min 20 s."
+  },
+  {
+    "id": "sp-silence",
+    "topic": "space",
+    "type": "concept",
+    "hook": "Space is silent because sound needs a crowd.",
+    "body": "Sound is a pressure wave handed from one molecule to the next. In the near-vacuum between stars there are too few molecules to carry it, so even a supernova is soundless.",
+    "source": "Sound requires a material medium; interstellar space ~1 atom/cm³."
+  },
+  {
+    "id": "sp-neutron-star",
+    "topic": "space",
+    "type": "predict",
+    "prompt": "A teaspoon of neutron star would weigh about as much as:",
+    "options": ["A loaded truck", "A mountain", "A billion tons"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 1, "unit": "billion tons" },
+    "kicker": "Roughly a billion tons per teaspoon. Gravity has crushed the atoms until the empty space inside them is gone.",
+    "source": "Neutron star density ~4×10^17 kg/m³; 5 cm³ ≈ 2×10^12 kg. NASA."
+  },
+  {
+    "id": "sp-scale-solar",
+    "topic": "space",
+    "type": "interactive",
+    "question": "Zoom out from Earth to the whole solar system.",
+    "widget": "scaleZoom",
+    "params": { "minExp": 6.5, "maxExp": 13.5, "startExp": 7.1 },
+    "source": "Earth diameter 1.27×10^7 m; solar system ~2.9×10^13 m."
+  },
+  {
+    "id": "sp-saturn-float",
+    "topic": "space",
+    "type": "concept",
+    "hook": "Saturn would float in a big enough bathtub.",
+    "body": "Its average density is 0.69 times that of water because it is mostly hydrogen and helium. It is the only planet less dense than the water it would float on.",
+    "source": "Saturn mean density 0.687 g/cm³. NASA Saturn Fact Sheet."
+  },
+  {
+    "id": "sp-olympus",
+    "topic": "space",
+    "type": "concept",
+    "hook": "Mars has a volcano two and a half Everests tall.",
+    "body": "Olympus Mons rises 22 km. Weak Martian gravity and a crust that never drifts over the hotspot let one volcano pile up lava for hundreds of millions of years.",
+    "source": "Olympus Mons ~21.9 km high; Everest 8.85 km. NASA."
+  },
+  {
+    "id": "ph-drop-throw",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "One ball dropped, one thrown sideways, released together. Which lands first?",
+    "options": ["The dropped one", "The thrown one", "They land together"],
+    "correctIndex": 2,
+    "reveal": { "widget": "gravityToy", "params": {} },
+    "kicker": "They land together. Sideways motion does nothing to the downward pull, so both fall for exactly the same time.",
+    "source": "Independence of horizontal and vertical motion; g ≈ 9.81 m/s²."
+  },
+  {
+    "id": "ph-touch",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "You have never actually touched anything.",
+    "body": "When your hand meets a table, the electron clouds in each repel before the atoms ever meet. What you feel as solid contact is an electromagnetic force, held a fraction of a nanometre apart.",
+    "source": "Pauli exclusion and electrostatic repulsion between electron shells."
+  },
+  {
+    "id": "ph-mpemba",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Hot water and cold water in the same freezer. Which can freeze first?",
+    "options": ["Cold, always", "Hot, sometimes", "They always tie"],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Hot water sometimes freezes first, the Mpemba effect. It is real but still argued over, with evaporation and convection the leading suspects.",
+    "source": "Mpemba effect; mechanism debated. Keep the honest 'still debated' framing."
+  },
+  {
+    "id": "ph-atom-empty",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "An atom is almost entirely empty. Zoom in and find the nucleus.",
+    "widget": "scaleZoom",
+    "params": { "minExp": -15, "maxExp": -9.5, "startExp": -10 },
+    "source": "Atom ~10^-10 m; nucleus ~10^-15 m, a 100,000× ratio."
+  },
+  {
+    "id": "ph-day-longer",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "Every day is 1.7 milliseconds longer than a century ago.",
+    "body": "The Moon's tides drag against Earth's spin and slow it down. That stolen rotation pushes the Moon 3.8 cm farther from us each year.",
+    "source": "Tidal braking ~1.7 ms/century; lunar recession 3.8 cm/yr. NASA."
+  },
+  {
+    "id": "ph-hammer-feather",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Drop a hammer and a feather on the Moon. Which lands first?",
+    "options": ["The hammer", "The feather", "They land together"],
+    "correctIndex": 2,
+    "reveal": { "widget": "gravityToy", "params": {} },
+    "kicker": "Together. With no air to slow the feather, gravity accelerates every mass equally. Apollo 15 filmed exactly this in 1971.",
+    "source": "Apollo 15 hammer-feather drop, 1971. NASA."
+  },
+  {
+    "id": "li-bacteria",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "How many of your body's cells are actually human?",
+    "options": ["About 90%", "About 50%", "About 10%"],
+    "correctIndex": 1,
+    "reveal": { "animation": "countUp", "value": 50, "unit": "% human" },
+    "kicker": "Roughly half. You carry about as many bacterial cells as human ones. The famous 10-to-1 figure was a guess that never held up.",
+    "source": "Sender, Fuchs, Milo 2016, PLoS Biology: ratio ~1:1."
+  },
+  {
+    "id": "li-mito",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Your mitochondria were once free-living bacteria.",
+    "body": "Two billion years ago one cell swallowed another and kept it alive. The captive became your power plant, and it still carries its own DNA, inherited only from your mother.",
+    "source": "Endosymbiotic theory; mitochondrial DNA is maternally inherited."
+  },
+  {
+    "id": "li-atoms",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Most of your body's atoms are traded out over the years.",
+    "body": "Cells constantly repair and rebuild from the food you eat, swapping out their material. The atoms of you keep changing while the pattern that arranges them stays.",
+    "source": "Ongoing metabolic turnover; rates vary widely by tissue."
+  },
+  {
+    "id": "li-tardigrade",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "Expose a tardigrade to the raw vacuum of space. What happens?",
+    "options": ["It dies instantly", "It survives", "It bursts"],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "It survives. A tardigrade dries into a barrel-shaped 'tun', halting its metabolism. Some revived after ten days in open space in 2007.",
+    "source": "TARDIS experiment, FOTON-M3, 2007. Jönsson et al."
+  },
+  {
+    "id": "li-potassium",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Bananas are faintly radioactive, and so are you.",
+    "body": "Both are rich in potassium, and a fixed fraction of all potassium is radioactive potassium-40. The dose from a banana is trivial, but it is genuinely there, ticking away inside you too.",
+    "source": "Potassium-40 is 0.012% of natural potassium; 'banana equivalent dose'."
+  },
+  {
+    "id": "li-cell-rate",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "How many new cells does your body build every second?",
+    "options": ["Thousands", "Millions", "Billions"],
+    "correctIndex": 1,
+    "reveal": { "animation": "countUp", "value": 3.8, "unit": "million / sec" },
+    "kicker": "About 3.8 million a second, mostly blood and gut lining, because those tissues wear out and get replaced fastest.",
+    "source": "Sender & Milo 2021, Nature Medicine: ~3.8×10^6 cells/s."
+  },
+  {
+    "id": "ea-deep-time",
+    "topic": "earth",
+    "type": "interactive",
+    "question": "Scrub through 4.5 billion years. Now find humans.",
+    "widget": "deepTime",
+    "params": { "startT": 0.45 },
+    "source": "Earth 4.54 Gyr; Homo sapiens ~300,000 yr. USGS geologic timescale."
+  },
+  {
+    "id": "ea-everest-mariana",
+    "topic": "earth",
+    "type": "predict",
+    "prompt": "Shrink Earth smooth. Is the bigger feature Everest up or Mariana down?",
+    "options": ["Everest, clearly", "Mariana, clearly", "Both nearly vanish"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 0.15, "unit": "% wrinkle" },
+    "kicker": "Both nearly vanish. Peak to trench is 20 km across a 12,700 km ball, a 0.15% wrinkle you could not feel with your palm.",
+    "source": "Everest 8.85 km, Mariana -10.9 km; Earth diameter 12,742 km. NOAA."
+  },
+  {
+    "id": "ea-atmosphere",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "The air you breathe is thinner than an apple's skin.",
+    "body": "Three quarters of the atmosphere's mass sits in the lowest 11 km of a planet 12,700 km wide. At globe scale, the breathable layer is a coat of varnish.",
+    "source": "~75% of atmospheric mass below 11 km (troposphere). NOAA."
+  },
+  {
+    "id": "ea-sahara",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "The Sahara desert fertilizes the Amazon rainforest.",
+    "body": "Each year winds carry about 27 million tons of phosphorus-rich dust across the Atlantic. It lands as fertilizer, replacing nutrients the rainforest loses to constant rain.",
+    "source": "NASA CALIPSO 2015: ~27.7 million tons dust/yr, Sahara to Amazon."
+  },
+  {
+    "id": "ea-freshwater",
+    "topic": "earth",
+    "type": "predict",
+    "prompt": "How much of Earth's water is fresh, liquid, and within reach?",
+    "options": ["About 3%", "About 1%", "Less than 1%"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 1, "unit": "%" },
+    "kicker": "Less than one percent. Almost all water is salt ocean or locked in ice, so every living thing leans on a thin sliver of rivers, lakes and groundwater.",
+    "source": "USGS: freshwater ~2.5%, most in ice; accessible surface/ground <1%."
+  },
+  {
+    "id": "ea-short-day",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "For a billion years, Earth's day was stuck at 19 hours.",
+    "body": "The Moon's pull on the oceans slows our spin, but the Sun heating the atmosphere speeds it back up. For about a billion years the two forces balanced and locked the day near 19 hours, until the tie finally broke.",
+    "source": "Day held ~19 h through the mid-Proterozoic 'boring billion', solar atmospheric tide balancing lunar tide. Mitchell & Kirscher 2023, Nature Geoscience."
+  },
+  {
+    "id": "ea-lightning",
+    "topic": "earth",
+    "type": "predict",
+    "prompt": "How hot is a lightning bolt next to the Sun's surface?",
+    "options": ["Cooler", "About the same", "Hotter"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 30000, "unit": "°C" },
+    "kicker": "About five times hotter. A bolt flashes air to nearly 30,000°C, while the Sun's surface sits around 5,500°C.",
+    "source": "Lightning channel ~30,000 K; solar photosphere ~5,778 K. NWS/NASA."
+  },
+  {
+    "id": "sp-scale-universe",
+    "topic": "space",
+    "type": "interactive",
+    "question": "Slide from a single proton out to the observable universe.",
+    "widget": "scaleZoom",
+    "params": { "minExp": -15, "maxExp": 26.9, "startExp": 0 },
+    "source": "Proton ~1.7×10^-15 m; observable universe ~8.8×10^26 m."
+  }
+]
