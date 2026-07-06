@@ -62,7 +62,7 @@ function Reveal({
 
   if (widget) {
     return (
-      <div className="h-[38dvh]">
+      <div className="min-h-0 w-full flex-1">
         <Widget widget={widget} params={params ?? {}} running accent={accent} />
       </div>
     );
@@ -131,8 +131,11 @@ export default function PredictCard({
       chosenIndex: i,
       correct: i === card.correctIndex,
     });
-    // Let the reveal animation play, then land the kicker.
-    setTimeout(() => setShowKicker(true), 900);
+    // Land the kicker after the reveal settles: count/bar animations get their
+    // full run plus a ~300ms beat; interactive and text-only reveals land sooner.
+    const anim = card.reveal.animation;
+    const settle = anim === "countUp" ? 1400 : anim === "barGrow" ? 1300 : 650;
+    setTimeout(() => setShowKicker(true), settle);
   };
 
   const committed = chosen !== null;
@@ -165,14 +168,14 @@ export default function PredictCard({
           </div>
         ) : (
           <div className="mt-6 flex min-h-0 flex-1 flex-col">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1.5">
               {card.options.map((opt, i) => {
                 const isCorrect = i === card.correctIndex;
                 const isChosen = i === chosen;
                 return (
                   <div
                     key={i}
-                    className="flex items-center justify-between rounded-xl border px-4 py-3 text-[0.95rem] transition-colors"
+                    className="flex items-center justify-between rounded-lg border px-4 py-2.5 text-[0.9rem] transition-colors"
                     style={{
                       borderColor: isCorrect
                         ? accent
@@ -198,15 +201,14 @@ export default function PredictCard({
               })}
             </div>
 
-            <div className="mt-6 flex flex-1 flex-col items-center justify-center">
+            <div className="mt-5 flex min-h-0 flex-1 flex-col items-center justify-center gap-4">
               <Reveal card={card} accent={accent} />
+              {showKicker ? (
+                <p className="animate-rise max-w-[36ch] text-center font-serif text-[1.05rem] italic leading-snug text-fg">
+                  {card.kicker}
+                </p>
+              ) : null}
             </div>
-
-            {showKicker ? (
-              <p className="animate-rise mt-4 max-w-[36ch] text-center font-serif text-[1.1rem] italic leading-snug text-fg">
-                {card.kicker}
-              </p>
-            ) : null}
           </div>
         )}
       </div>

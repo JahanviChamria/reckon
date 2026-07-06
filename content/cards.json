@@ -78,7 +78,7 @@
     "prompt": "One ball dropped, one thrown sideways, released together. Which lands first?",
     "options": ["The dropped one", "The thrown one", "They land together"],
     "correctIndex": 2,
-    "reveal": { "widget": "gravityToy", "params": {} },
+    "reveal": {},
     "kicker": "They land together. Sideways motion does nothing to the downward pull, so both fall for exactly the same time.",
     "source": "Independence of horizontal and vertical motion; g ≈ 9.81 m/s²."
   },
@@ -125,7 +125,7 @@
     "prompt": "Drop a hammer and a feather on the Moon. Which lands first?",
     "options": ["The hammer", "The feather", "They land together"],
     "correctIndex": 2,
-    "reveal": { "widget": "gravityToy", "params": {} },
+    "reveal": {},
     "kicker": "Together. With no air to slow the feather, gravity accelerates every mass equally. Apollo 15 filmed exactly this in 1971.",
     "source": "Apollo 15 hammer-feather drop, 1971. NASA."
   },
@@ -260,5 +260,14 @@
     "widget": "scaleZoom",
     "params": { "minExp": -15, "maxExp": 26.9, "startExp": 0 },
     "source": "Proton ~1.7×10^-15 m; observable universe ~8.8×10^26 m."
+  },
+  {
+    "id": "ph-gravity-toy",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "Throw a ball under Moon, Earth, and Jupiter gravity.",
+    "widget": "gravityToy",
+    "params": {},
+    "source": "Surface gravity: Moon 1.62, Earth 9.81, Jupiter 24.79 m/s². NASA planetary fact sheets."
   }
 ]
