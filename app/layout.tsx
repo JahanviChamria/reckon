@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Orbit",
+  title: "Reckon",
   description:
     "A scroll feed that ends. Bite-size interactive science instead of mindless scrolling.",
 };

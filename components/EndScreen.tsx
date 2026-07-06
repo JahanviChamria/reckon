@@ -52,7 +52,7 @@ export default function EndScreen({
           ))}
         </div>
 
-        <p className="label-mono mt-14 text-faint">Orbit</p>
+        <p className="label-mono mt-14 text-faint">Reckon</p>
       </div>
     </section>
   );

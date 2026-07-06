@@ -120,24 +120,24 @@ body {
 }
 
 /* Range slider — quiet track, generous touch target */
-.orbit-range {
+.range-slider {
   -webkit-appearance: none;
   appearance: none;
   height: 44px;
   background: transparent;
   cursor: pointer;
 }
-.orbit-range::-webkit-slider-runnable-track {
+.range-slider::-webkit-slider-runnable-track {
   height: 2px;
   background: #2a2a3a;
   border-radius: 1px;
 }
-.orbit-range::-moz-range-track {
+.range-slider::-moz-range-track {
   height: 2px;
   background: #2a2a3a;
   border-radius: 1px;
 }
-.orbit-range::-webkit-slider-thumb {
+.range-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
@@ -148,7 +148,7 @@ body {
   border: 3px solid var(--color-bg);
   box-shadow: 0 0 0 1px #33334a;
 }
-.orbit-range::-moz-range-thumb {
+.range-slider::-moz-range-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;

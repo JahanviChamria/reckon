@@ -180,7 +180,7 @@ export default function ScaleZoom({ params, accent = "#4ec9d9" }: WidgetProps) {
           value={Math.round(t * 1000)}
           onChange={(e) => setT(Number(e.target.value) / 1000)}
           aria-label="Zoom scale"
-          className="orbit-range w-full"
+          className="range-slider w-full"
           style={{ accentColor: accent }}
         />
         <div className="label-mono mt-1 flex justify-between text-faint">

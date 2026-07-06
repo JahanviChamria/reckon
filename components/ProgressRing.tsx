@@ -1,6 +1,6 @@
 "use client";
 
-export default function OrbitProgress({
+export default function ProgressRing({
   current,
   total,
   accent,

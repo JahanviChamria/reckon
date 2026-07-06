@@ -1,8 +1,10 @@
-# Orbit
+# Reckon
 
 A scroll feed that ends. Bite-size interactive science instead of mindless scrolling.
 
-Everyone doomscrolls, and every "healthy alternative" fails because it ignores why scrolling works: frictionless, thumb-driven, surprising. Orbit keeps the feed and swaps the content. Every few cards is something you manipulate or a prediction you commit to before the reveal. And the feed ends — 25 cards, then it tells you to leave.
+Everyone doomscrolls, and every "healthy alternative" fails because it ignores why scrolling works: frictionless, thumb-driven, surprising. Reckon keeps the feed and swaps the content. Every few cards is something you manipulate or a prediction you commit to before the reveal. And the feed ends — 25 cards, then it tells you to leave.
+
+The name is the mechanic: you *reckon* — estimate, predict, figure — then find out.
 
 ## How it works
 

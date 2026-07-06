@@ -8,7 +8,7 @@ import ConceptCard from "./cards/ConceptCard";
 import InteractiveCard from "./cards/InteractiveCard";
 import PredictCard from "./cards/PredictCard";
 import EndScreen from "./EndScreen";
-import OrbitProgress from "./OrbitProgress";
+import ProgressRing from "./ProgressRing";
 
 export default function Feed({ cards }: { cards: Card[] }) {
   const { state, hydrated, setLastCardIndex, recordPrediction } = useFeedState();
@@ -63,7 +63,7 @@ export default function Feed({ cards }: { cards: Card[] }) {
 
   return (
     <>
-      <OrbitProgress
+      <ProgressRing
         current={active}
         total={total}
         accent={activeAccent}

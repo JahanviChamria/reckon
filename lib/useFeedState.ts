@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { FeedState, Prediction } from "./types";
 import { todayKey } from "./feed";
 
-const STORAGE_KEY = "orbit.feedstate.v1";
+const STORAGE_KEY = "reckon.feedstate.v1";
 
 function freshState(dateKey: string, daysVisited: number): FeedState {
   return {

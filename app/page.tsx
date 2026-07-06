@@ -25,7 +25,7 @@ export default function Home() {
   if (!mounted) {
     return (
       <main className="flex h-[100dvh] w-full items-center justify-center">
-        <span className="label-mono animate-fade text-faint">Orbit</span>
+        <span className="label-mono animate-fade text-faint">Reckon</span>
       </main>
     );
   }
