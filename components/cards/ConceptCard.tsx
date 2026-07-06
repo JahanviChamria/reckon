@@ -1,7 +1,9 @@
 "use client";
 
 import type { ConceptCard as ConceptCardType } from "@/lib/types";
+import { TOPIC_ACCENT } from "@/lib/types";
 import CardShell from "./CardShell";
+import CardMotif from "../CardMotif";
 
 export default function ConceptCard({
   card,
@@ -17,8 +19,13 @@ export default function ConceptCard({
   return (
     <CardShell topic={card.topic} source={card.source} index={index} total={total}>
       <div key={active ? "on" : "off"} className={active ? "animate-rise" : ""}>
+        <CardMotif
+          seed={card.id}
+          accent={TOPIC_ACCENT[card.topic]}
+          size={68}
+        />
         <span
-          className="mb-6 block h-px w-10"
+          className="mb-6 mt-5 block h-px w-10"
           style={{ background: "var(--accent)" }}
           aria-hidden
         />
