@@ -1,6 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import type { FeedState } from "@/lib/types";
+import { shareResult } from "@/lib/share";
+
+function formatDate(dateKey: string): string {
+  const [y, m, d] = dateKey.split("-").map(Number);
+  if (!y || !m || !d) return dateKey;
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+  return `${d} ${months[m - 1]} ${y}`;
+}
 
 export default function EndScreen({
   state,
@@ -13,6 +25,8 @@ export default function EndScreen({
 }) {
   const total = state.predictions.length;
   const correct = state.predictions.filter((p) => p.correct).length;
+  const [sharing, setSharing] = useState(false);
+  const [note, setNote] = useState<string | null>(null);
 
   const stats: { label: string; value: string }[] = [
     { label: "Cards", value: String(cardsSeen) },
@@ -25,6 +39,22 @@ export default function EndScreen({
       value: String(state.daysVisited),
     },
   ];
+
+  const onShare = async () => {
+    if (sharing) return;
+    setSharing(true);
+    setNote(null);
+    const result = await shareResult({
+      cardsSeen,
+      correct,
+      total,
+      day: state.daysVisited,
+      dateLabel: formatDate(state.dateKey),
+    });
+    setSharing(false);
+    if (result === "downloaded") setNote("Image saved");
+    else if (result === "error") setNote("Could not create image");
+  };
 
   return (
     <section className="feed-card relative flex h-[100dvh] w-full flex-col items-center justify-center px-8 text-center">
@@ -52,7 +82,19 @@ export default function EndScreen({
           ))}
         </div>
 
-        <p className="label-mono mt-14 text-faint">Reckon</p>
+        <div className="mt-12 flex flex-col items-center gap-3">
+          <button
+            onClick={onShare}
+            disabled={sharing}
+            className="label-mono rounded-full border px-7 py-3 transition-colors disabled:opacity-50"
+            style={{ borderColor: "var(--color-space)", color: "var(--color-space)" }}
+          >
+            {sharing ? "Preparing" : "Share today"}
+          </button>
+          <span className="label-mono h-4 text-faint">{note ?? ""}</span>
+        </div>
+
+        <p className="label-mono mt-10 text-faint">Reckon</p>
       </div>
     </section>
   );
