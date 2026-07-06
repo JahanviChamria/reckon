@@ -269,5 +269,158 @@
     "widget": "gravityToy",
     "params": {},
     "source": "Surface gravity: Moon 1.62, Earth 9.81, Jupiter 24.79 m/s². NASA planetary fact sheets."
+  },
+  {
+    "id": "sp-drive-sun",
+    "topic": "space",
+    "type": "predict",
+    "prompt": "Drive to the Sun at highway speed. How long is the trip?",
+    "options": ["About 3 years", "About 20 years", "Over 170 years"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 171, "unit": "years" },
+    "kicker": "Over 170 years without a single stop. The Sun sits 150 million km away, so even at 100 km per hour the drive outlasts two long lifetimes.",
+    "source": "1 AU = 149.6M km; at 100 km/h ≈ 170.8 years nonstop."
+  },
+  {
+    "id": "sp-venus-day",
+    "topic": "space",
+    "type": "concept",
+    "hook": "On Venus, a day lasts longer than a year.",
+    "body": "Venus turns so slowly that one full spin takes 243 Earth days, while a whole orbit takes only 225. It also spins backwards, so on Venus the Sun rises in the west.",
+    "source": "Venus sidereal rotation 243 d, orbit 225 d, retrograde. NASA Venus Fact Sheet."
+  },
+  {
+    "id": "sp-hottest",
+    "topic": "space",
+    "type": "predict",
+    "prompt": "Which planet is the hottest? It is not the one closest to the Sun.",
+    "options": ["Mercury", "Venus", "Jupiter"],
+    "correctIndex": 1,
+    "reveal": { "animation": "countUp", "value": 465, "unit": "°C on Venus" },
+    "kicker": "Venus, at about 465°C. Its thick carbon dioxide air traps heat in a runaway greenhouse, so it roasts hotter than Mercury despite sitting farther from the Sun.",
+    "source": "Venus surface ~465°C, hotter than Mercury; CO2 greenhouse. NASA."
+  },
+  {
+    "id": "sp-scale-cell",
+    "topic": "space",
+    "type": "interactive",
+    "question": "Zoom from a single cell up to your whole body.",
+    "widget": "scaleZoom",
+    "params": { "minExp": -6, "maxExp": 0.5, "startExp": -5 },
+    "source": "Human cell ~10 µm; human body ~1.7 m."
+  },
+  {
+    "id": "ph-balloon",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "A helium balloon floats in your car. You hit the gas. It moves...",
+    "options": ["Backward", "Forward", "Straight up"],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Forward. Accelerating packs the denser air toward the back of the car, and the light balloon gets pushed the other way, toward the front.",
+    "source": "Buoyancy in an accelerating frame; balloon moves forward. Scientific American."
+  },
+  {
+    "id": "ph-glass",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "Glass is a solid, not a slow-flowing liquid.",
+    "body": "Glass is an amorphous solid. Antique panes look thicker at the bottom because old glassmaking left them uneven, not because glass oozed downward. Real flow at room temperature would take longer than the universe has existed.",
+    "source": "Glass is an amorphous solid; room-temp flow ~10^23 yr. Scientific American; UCR physics FAQ."
+  },
+  {
+    "id": "ph-equator",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Where do you weigh less, at the equator or at the poles?",
+    "options": ["At the poles", "At the equator", "Exactly the same"],
+    "correctIndex": 1,
+    "reveal": { "animation": "countUp", "value": 0.5, "unit": "% lighter" },
+    "kicker": "At the equator, by about half a percent. Earth's spin flings you outward and its bulge lifts you farther from the core, easing gravity's grip.",
+    "source": "g ≈ 9.780 m/s² equator vs 9.832 poles (~0.5%); spin plus equatorial bulge."
+  },
+  {
+    "id": "ph-leidenfrost",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "Flick water onto a scorching pan and it skates.",
+    "body": "Above about 200°C the underside of each droplet flashes to vapor. That thin cushion of gas lifts the drop clear of the metal, so it hovers and darts around instead of boiling away.",
+    "source": "Leidenfrost effect, onset ~200°C; insulating vapor layer. Described 1756."
+  },
+  {
+    "id": "li-tree-air",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "A tree's mass comes mostly from...",
+    "options": ["The soil", "The air", "The water"],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "The air. Most of a tree is carbon pulled from carbon dioxide by its leaves. The soil offers water and a few minerals, but almost none of the weight.",
+    "source": "Tree biomass is mostly carbon fixed from atmospheric CO2. Van Helmont willow experiment; MSU Extension."
+  },
+  {
+    "id": "li-octopus",
+    "topic": "life",
+    "type": "concept",
+    "hook": "An octopus has three hearts and blue blood.",
+    "body": "Two hearts push blood through the gills, one drives it to the body. The blood runs blue because it ferries oxygen on copper, not iron. The body heart stops when the octopus swims, so it would rather crawl.",
+    "source": "Octopus: 2 branchial + 1 systemic heart; copper hemocyanin. Smithsonian; NHM."
+  },
+  {
+    "id": "li-heartbeats",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "How many times does a human heart beat in a lifetime?",
+    "options": ["About 30 million", "About 300 million", "About 3 billion"],
+    "correctIndex": 2,
+    "reveal": { "animation": "countUp", "value": 3, "unit": "billion beats" },
+    "kicker": "Around 3 billion, roughly 100,000 a day for 80 years. Oddly, most mammals get about a billion beats whatever their size, and we simply live long enough to spend more.",
+    "source": "~2.5-3 billion beats over a lifetime; AHA ~2.6 billion; ~100,000/day."
+  },
+  {
+    "id": "li-gut-brain",
+    "topic": "life",
+    "type": "concept",
+    "hook": "You have a second brain, and it sits in your gut.",
+    "body": "The gut wall holds over 500 million neurons, its own network that runs digestion without waiting for orders from your head. It keeps working even when its link to the brain is cut.",
+    "source": "Enteric nervous system ~500 million neurons, operates independently. Scientific American; Cleveland Clinic."
+  },
+  {
+    "id": "ea-amazon-oxygen",
+    "topic": "earth",
+    "type": "predict",
+    "prompt": "How much of the world's oxygen does the Amazon actually add?",
+    "options": ["About 20%", "About 6%", "Almost none"],
+    "correctIndex": 2,
+    "reveal": {},
+    "kicker": "Almost none, on balance. The forest breathes back nearly all the oxygen it makes. The 'lungs of the planet' line is a myth. Ocean plankton do most of the real work.",
+    "source": "Amazon net oxygen ~zero (respiration ≈ photosynthesis); oceans 50-80%. National Geographic; Malhi, Oxford."
+  },
+  {
+    "id": "ea-inner-core",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "Earth's core is as hot as the Sun's surface, yet solid.",
+    "body": "The inner core sits near 5,400°C, hot enough to melt iron many times over. It stays solid because the pressure, over three million times the surface, packs the atoms too tightly to flow.",
+    "source": "Inner core ~5,200-5,400°C; solid due to ~3.6M atm pressure raising iron's melting point."
+  },
+  {
+    "id": "ea-antarctica",
+    "topic": "earth",
+    "type": "predict",
+    "prompt": "Which is the driest desert on Earth?",
+    "options": ["The Sahara", "The Australian Outback", "Antarctica"],
+    "correctIndex": 2,
+    "reveal": {},
+    "kicker": "Antarctica. A desert is defined by how little falls, not by heat, and its interior sees under 50 mm a year. It is the largest, driest desert on the planet.",
+    "source": "Antarctica largest desert; interior <50 mm/yr precipitation. Desert = <250 mm/yr."
+  },
+  {
+    "id": "ea-mountain-roots",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "Mountains have hidden roots, deeper than they stand tall.",
+    "body": "A mountain range floats on the mantle like an iceberg on water. The higher it rises, the deeper its crust pushes down, so beneath the Himalayas the crust reaches about 70 km instead of the usual 35.",
+    "source": "Isostasy; crustal roots 70-90 km under high ranges vs ~35 km normal. Britannica."
   }
 ]
