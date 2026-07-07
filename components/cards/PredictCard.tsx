@@ -5,7 +5,7 @@ import type { PredictCard as PredictCardType, Prediction } from "@/lib/types";
 import { TOPIC_ACCENT } from "@/lib/types";
 import { easeOut } from "@/lib/canvas";
 import CardShell from "./CardShell";
-import CardMotif from "../CardMotif";
+import CardGlyph from "../CardGlyph";
 import Widget from "../widgets/Widget";
 
 function useCountUp(target: number, run: boolean, ms = 1100) {
@@ -149,7 +149,7 @@ export default function PredictCard({
       total={total}
     >
       <div className="flex h-full flex-col">
-        <CardMotif seed={card.id} accent={accent} size={56} />
+        <CardGlyph name={card.visual} seed={card.id} accent={accent} size={56} />
         <span className="label-mono mb-4 mt-4 text-faint">Predict</span>
         <h2 className="font-serif-display text-[clamp(1.5rem,6vw,2.1rem)]">
           {card.prompt}

@@ -11,17 +11,27 @@
   {
     "id": "sp-sun-mass",
     "topic": "space",
+    "visual": "sun",
     "type": "predict",
     "prompt": "How much of the solar system's mass is the Sun?",
-    "options": ["About 75%", "About 90%", "About 99.9%"],
+    "options": [
+      "About 75%",
+      "About 90%",
+      "About 99.9%"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 99.86, "unit": "%" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 99.86,
+      "unit": "%"
+    },
     "kicker": "The Sun holds 99.86% of the solar system's mass. Every planet and moon combined is rounding error.",
     "source": "Sun is 99.86% of solar system mass. NASA Sun Fact Sheet."
   },
   {
     "id": "sp-sun-delay",
     "topic": "space",
+    "visual": "sun",
     "type": "concept",
     "hook": "You see the Sun as it was 8 minutes ago.",
     "body": "Light takes 8 minutes 20 seconds to cross the 150 million km to Earth. If the Sun vanished now, you would feel nothing until the darkness arrived.",
@@ -30,6 +40,7 @@
   {
     "id": "sp-silence",
     "topic": "space",
+    "visual": "waves",
     "type": "concept",
     "hook": "Space is silent because sound needs a crowd.",
     "body": "Sound is a pressure wave handed from one molecule to the next. In the near-vacuum between stars there are too few molecules to carry it, so even a supernova is soundless.",
@@ -38,11 +49,20 @@
   {
     "id": "sp-neutron-star",
     "topic": "space",
+    "visual": "star",
     "type": "predict",
     "prompt": "A teaspoon of neutron star would weigh about as much as:",
-    "options": ["A loaded truck", "A mountain", "A billion tons"],
+    "options": [
+      "A loaded truck",
+      "A mountain",
+      "A billion tons"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 1, "unit": "billion tons" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 1,
+      "unit": "billion tons"
+    },
     "kicker": "Roughly a billion tons per teaspoon. Gravity has crushed the atoms until the empty space inside them is gone.",
     "source": "Neutron star density ~4×10^17 kg/m³; 5 cm³ ≈ 2×10^12 kg. NASA."
   },
@@ -52,12 +72,17 @@
     "type": "interactive",
     "question": "Zoom out from Earth to the whole solar system.",
     "widget": "scaleZoom",
-    "params": { "minExp": 6.5, "maxExp": 13.5, "startExp": 7.1 },
+    "params": {
+      "minExp": 6.5,
+      "maxExp": 13.5,
+      "startExp": 7.1
+    },
     "source": "Earth diameter 1.27×10^7 m; solar system ~2.9×10^13 m."
   },
   {
     "id": "sp-saturn-float",
     "topic": "space",
+    "visual": "planet-rings",
     "type": "concept",
     "hook": "Saturn would float in a big enough bathtub.",
     "body": "Its average density is 0.69 times that of water because it is mostly hydrogen and helium. It is the only planet less dense than the water it would float on.",
@@ -66,6 +91,7 @@
   {
     "id": "sp-olympus",
     "topic": "space",
+    "visual": "mountain",
     "type": "concept",
     "hook": "Mars has a volcano two and a half Everests tall.",
     "body": "Olympus Mons rises 22 km. Weak Martian gravity and a crust that never drifts over the hotspot let one volcano pile up lava for hundreds of millions of years.",
@@ -76,7 +102,11 @@
     "topic": "physics",
     "type": "predict",
     "prompt": "One ball dropped, one thrown sideways, released together. Which lands first?",
-    "options": ["The dropped one", "The thrown one", "They land together"],
+    "options": [
+      "The dropped one",
+      "The thrown one",
+      "They land together"
+    ],
     "correctIndex": 2,
     "reveal": {},
     "kicker": "They land together. Sideways motion does nothing to the downward pull, so both fall for exactly the same time.",
@@ -85,6 +115,7 @@
   {
     "id": "ph-touch",
     "topic": "physics",
+    "visual": "atom",
     "type": "concept",
     "hook": "You have never actually touched anything.",
     "body": "When your hand meets a table, the electron clouds in each repel before the atoms ever meet. What you feel as solid contact is an electromagnetic force, held a fraction of a nanometre apart.",
@@ -93,9 +124,14 @@
   {
     "id": "ph-mpemba",
     "topic": "physics",
+    "visual": "snowflake",
     "type": "predict",
     "prompt": "Hot water and cold water in the same freezer. Which can freeze first?",
-    "options": ["Cold, always", "Hot, sometimes", "They always tie"],
+    "options": [
+      "Cold, always",
+      "Hot, sometimes",
+      "They always tie"
+    ],
     "correctIndex": 1,
     "reveal": {},
     "kicker": "Hot water sometimes freezes first, the Mpemba effect. It is real but still argued over, with evaporation and convection the leading suspects.",
@@ -107,12 +143,17 @@
     "type": "interactive",
     "question": "An atom is almost entirely empty. Zoom in and find the nucleus.",
     "widget": "scaleZoom",
-    "params": { "minExp": -15, "maxExp": -9.5, "startExp": -10 },
+    "params": {
+      "minExp": -15,
+      "maxExp": -9.5,
+      "startExp": -10
+    },
     "source": "Atom ~10^-10 m; nucleus ~10^-15 m, a 100,000× ratio."
   },
   {
     "id": "ph-day-longer",
     "topic": "physics",
+    "visual": "clock",
     "type": "concept",
     "hook": "Every day is 1.7 milliseconds longer than a century ago.",
     "body": "The Moon's tides drag against Earth's spin and slow it down. That stolen rotation pushes the Moon 3.8 cm farther from us each year.",
@@ -121,9 +162,14 @@
   {
     "id": "ph-hammer-feather",
     "topic": "physics",
+    "visual": "feather",
     "type": "predict",
     "prompt": "Drop a hammer and a feather on the Moon. Which lands first?",
-    "options": ["The hammer", "The feather", "They land together"],
+    "options": [
+      "The hammer",
+      "The feather",
+      "They land together"
+    ],
     "correctIndex": 2,
     "reveal": {},
     "kicker": "Together. With no air to slow the feather, gravity accelerates every mass equally. Apollo 15 filmed exactly this in 1971.",
@@ -132,17 +178,27 @@
   {
     "id": "li-bacteria",
     "topic": "life",
+    "visual": "cell",
     "type": "predict",
     "prompt": "How many of your body's cells are actually human?",
-    "options": ["About 90%", "About 50%", "About 10%"],
+    "options": [
+      "About 90%",
+      "About 50%",
+      "About 10%"
+    ],
     "correctIndex": 1,
-    "reveal": { "animation": "countUp", "value": 50, "unit": "% human" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 50,
+      "unit": "% human"
+    },
     "kicker": "Roughly half. You carry about as many bacterial cells as human ones. The famous 10-to-1 figure was a guess that never held up.",
     "source": "Sender, Fuchs, Milo 2016, PLoS Biology: ratio ~1:1."
   },
   {
     "id": "li-mito",
     "topic": "life",
+    "visual": "cell",
     "type": "concept",
     "hook": "Your mitochondria were once free-living bacteria.",
     "body": "Two billion years ago one cell swallowed another and kept it alive. The captive became your power plant, and it still carries its own DNA, inherited only from your mother.",
@@ -151,6 +207,7 @@
   {
     "id": "li-atoms",
     "topic": "life",
+    "visual": "cycle",
     "type": "concept",
     "hook": "Most of your body's atoms are traded out over the years.",
     "body": "Cells constantly repair and rebuild from the food you eat, swapping out their material. The atoms of you keep changing while the pattern that arranges them stays.",
@@ -161,7 +218,11 @@
     "topic": "life",
     "type": "predict",
     "prompt": "Expose a tardigrade to the raw vacuum of space. What happens?",
-    "options": ["It dies instantly", "It survives", "It bursts"],
+    "options": [
+      "It dies instantly",
+      "It survives",
+      "It bursts"
+    ],
     "correctIndex": 1,
     "reveal": {},
     "kicker": "It survives. A tardigrade dries into a barrel-shaped 'tun', halting its metabolism. Some revived after ten days in open space in 2007.",
@@ -170,6 +231,7 @@
   {
     "id": "li-potassium",
     "topic": "life",
+    "visual": "atom",
     "type": "concept",
     "hook": "Bananas are faintly radioactive, and so are you.",
     "body": "Both are rich in potassium, and a fixed fraction of all potassium is radioactive potassium-40. The dose from a banana is trivial, but it is genuinely there, ticking away inside you too.",
@@ -178,11 +240,20 @@
   {
     "id": "li-cell-rate",
     "topic": "life",
+    "visual": "cell",
     "type": "predict",
     "prompt": "How many new cells does your body build every second?",
-    "options": ["Thousands", "Millions", "Billions"],
+    "options": [
+      "Thousands",
+      "Millions",
+      "Billions"
+    ],
     "correctIndex": 1,
-    "reveal": { "animation": "countUp", "value": 3.8, "unit": "million / sec" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 3.8,
+      "unit": "million / sec"
+    },
     "kicker": "About 3.8 million a second, mostly blood and gut lining, because those tissues wear out and get replaced fastest.",
     "source": "Sender & Milo 2021, Nature Medicine: ~3.8×10^6 cells/s."
   },
@@ -192,23 +263,35 @@
     "type": "interactive",
     "question": "Scrub through 4.5 billion years. Now find humans.",
     "widget": "deepTime",
-    "params": { "startT": 0.45 },
+    "params": {
+      "startT": 0.45
+    },
     "source": "Earth 4.54 Gyr; Homo sapiens ~300,000 yr. USGS geologic timescale."
   },
   {
     "id": "ea-everest-mariana",
     "topic": "earth",
+    "visual": "mountain",
     "type": "predict",
     "prompt": "Shrink Earth smooth. Is the bigger feature Everest up or Mariana down?",
-    "options": ["Everest, clearly", "Mariana, clearly", "Both nearly vanish"],
+    "options": [
+      "Everest, clearly",
+      "Mariana, clearly",
+      "Both nearly vanish"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 0.15, "unit": "% wrinkle" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 0.15,
+      "unit": "% wrinkle"
+    },
     "kicker": "Both nearly vanish. Peak to trench is 20 km across a 12,700 km ball, a 0.15% wrinkle you could not feel with your palm.",
     "source": "Everest 8.85 km, Mariana -10.9 km; Earth diameter 12,742 km. NOAA."
   },
   {
     "id": "ea-atmosphere",
     "topic": "earth",
+    "visual": "layers",
     "type": "concept",
     "hook": "The air you breathe is thinner than an apple's skin.",
     "body": "Three quarters of the atmosphere's mass sits in the lowest 11 km of a planet 12,700 km wide. At globe scale, the breathable layer is a coat of varnish.",
@@ -217,6 +300,7 @@
   {
     "id": "ea-sahara",
     "topic": "earth",
+    "visual": "leaf",
     "type": "concept",
     "hook": "The Sahara desert fertilizes the Amazon rainforest.",
     "body": "Each year winds carry about 27 million tons of phosphorus-rich dust across the Atlantic. It lands as fertilizer, replacing nutrients the rainforest loses to constant rain.",
@@ -225,17 +309,27 @@
   {
     "id": "ea-freshwater",
     "topic": "earth",
+    "visual": "droplet",
     "type": "predict",
     "prompt": "How much of Earth's water is fresh, liquid, and within reach?",
-    "options": ["About 3%", "About 1%", "Less than 1%"],
+    "options": [
+      "About 3%",
+      "About 1%",
+      "Less than 1%"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 1, "unit": "%" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 1,
+      "unit": "%"
+    },
     "kicker": "Less than one percent. Almost all water is salt ocean or locked in ice, so every living thing leans on a thin sliver of rivers, lakes and groundwater.",
     "source": "USGS: freshwater ~2.5%, most in ice; accessible surface/ground <1%."
   },
   {
     "id": "ea-short-day",
     "topic": "earth",
+    "visual": "clock",
     "type": "concept",
     "hook": "For a billion years, Earth's day was stuck at 19 hours.",
     "body": "The Moon's pull on the oceans slows our spin, but the Sun heating the atmosphere speeds it back up. For about a billion years the two forces balanced and locked the day near 19 hours, until the tie finally broke.",
@@ -244,11 +338,20 @@
   {
     "id": "ea-lightning",
     "topic": "earth",
+    "visual": "bolt",
     "type": "predict",
     "prompt": "How hot is a lightning bolt next to the Sun's surface?",
-    "options": ["Cooler", "About the same", "Hotter"],
+    "options": [
+      "Cooler",
+      "About the same",
+      "Hotter"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 30000, "unit": "°C" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 30000,
+      "unit": "°C"
+    },
     "kicker": "About five times hotter. A bolt flashes air to nearly 30,000°C, while the Sun's surface sits around 5,500°C.",
     "source": "Lightning channel ~30,000 K; solar photosphere ~5,778 K. NWS/NASA."
   },
@@ -258,7 +361,11 @@
     "type": "interactive",
     "question": "Slide from a single proton out to the observable universe.",
     "widget": "scaleZoom",
-    "params": { "minExp": -15, "maxExp": 26.9, "startExp": 0 },
+    "params": {
+      "minExp": -15,
+      "maxExp": 26.9,
+      "startExp": 0
+    },
     "source": "Proton ~1.7×10^-15 m; observable universe ~8.8×10^26 m."
   },
   {
@@ -273,17 +380,27 @@
   {
     "id": "sp-drive-sun",
     "topic": "space",
+    "visual": "sun",
     "type": "predict",
     "prompt": "Drive to the Sun at highway speed. How long is the trip?",
-    "options": ["About 3 years", "About 20 years", "Over 170 years"],
+    "options": [
+      "About 3 years",
+      "About 20 years",
+      "Over 170 years"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 171, "unit": "years" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 171,
+      "unit": "years"
+    },
     "kicker": "Over 170 years without a single stop. The Sun sits 150 million km away, so even at 100 km per hour the drive outlasts two long lifetimes.",
     "source": "1 AU = 149.6M km; at 100 km/h ≈ 170.8 years nonstop."
   },
   {
     "id": "sp-venus-day",
     "topic": "space",
+    "visual": "clock",
     "type": "concept",
     "hook": "On Venus, a day lasts longer than a year.",
     "body": "Venus turns so slowly that one full spin takes 243 Earth days, while a whole orbit takes only 225. It also spins backwards, so on Venus the Sun rises in the west.",
@@ -292,11 +409,20 @@
   {
     "id": "sp-hottest",
     "topic": "space",
+    "visual": "thermometer",
     "type": "predict",
     "prompt": "Which planet is the hottest? It is not the one closest to the Sun.",
-    "options": ["Mercury", "Venus", "Jupiter"],
+    "options": [
+      "Mercury",
+      "Venus",
+      "Jupiter"
+    ],
     "correctIndex": 1,
-    "reveal": { "animation": "countUp", "value": 465, "unit": "°C on Venus" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 465,
+      "unit": "°C on Venus"
+    },
     "kicker": "Venus, at about 465°C. Its thick carbon dioxide air traps heat in a runaway greenhouse, so it roasts hotter than Mercury despite sitting farther from the Sun.",
     "source": "Venus surface ~465°C, hotter than Mercury; CO2 greenhouse. NASA."
   },
@@ -306,15 +432,24 @@
     "type": "interactive",
     "question": "Zoom from a single cell up to your whole body.",
     "widget": "scaleZoom",
-    "params": { "minExp": -6, "maxExp": 0.5, "startExp": -5 },
+    "params": {
+      "minExp": -6,
+      "maxExp": 0.5,
+      "startExp": -5
+    },
     "source": "Human cell ~10 µm; human body ~1.7 m."
   },
   {
     "id": "ph-balloon",
     "topic": "physics",
+    "visual": "balloon",
     "type": "predict",
     "prompt": "A helium balloon floats in your car. You hit the gas. It moves...",
-    "options": ["Backward", "Forward", "Straight up"],
+    "options": [
+      "Backward",
+      "Forward",
+      "Straight up"
+    ],
     "correctIndex": 1,
     "reveal": {},
     "kicker": "Forward. Accelerating packs the denser air toward the back of the car, and the light balloon gets pushed the other way, toward the front.",
@@ -331,17 +466,27 @@
   {
     "id": "ph-equator",
     "topic": "physics",
+    "visual": "globe",
     "type": "predict",
     "prompt": "Where do you weigh less, at the equator or at the poles?",
-    "options": ["At the poles", "At the equator", "Exactly the same"],
+    "options": [
+      "At the poles",
+      "At the equator",
+      "Exactly the same"
+    ],
     "correctIndex": 1,
-    "reveal": { "animation": "countUp", "value": 0.5, "unit": "% lighter" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 0.5,
+      "unit": "% lighter"
+    },
     "kicker": "At the equator, by about half a percent. Earth's spin flings you outward and its bulge lifts you farther from the core, easing gravity's grip.",
     "source": "g ≈ 9.780 m/s² equator vs 9.832 poles (~0.5%); spin plus equatorial bulge."
   },
   {
     "id": "ph-leidenfrost",
     "topic": "physics",
+    "visual": "droplet",
     "type": "concept",
     "hook": "Flick water onto a scorching pan and it skates.",
     "body": "Above about 200°C the underside of each droplet flashes to vapor. That thin cushion of gas lifts the drop clear of the metal, so it hovers and darts around instead of boiling away.",
@@ -350,9 +495,14 @@
   {
     "id": "li-tree-air",
     "topic": "life",
+    "visual": "leaf",
     "type": "predict",
     "prompt": "A tree's mass comes mostly from...",
-    "options": ["The soil", "The air", "The water"],
+    "options": [
+      "The soil",
+      "The air",
+      "The water"
+    ],
     "correctIndex": 1,
     "reveal": {},
     "kicker": "The air. Most of a tree is carbon pulled from carbon dioxide by its leaves. The soil offers water and a few minerals, but almost none of the weight.",
@@ -369,17 +519,27 @@
   {
     "id": "li-heartbeats",
     "topic": "life",
+    "visual": "heart",
     "type": "predict",
     "prompt": "How many times does a human heart beat in a lifetime?",
-    "options": ["About 30 million", "About 300 million", "About 3 billion"],
+    "options": [
+      "About 30 million",
+      "About 300 million",
+      "About 3 billion"
+    ],
     "correctIndex": 2,
-    "reveal": { "animation": "countUp", "value": 3, "unit": "billion beats" },
+    "reveal": {
+      "animation": "countUp",
+      "value": 3,
+      "unit": "billion beats"
+    },
     "kicker": "Around 3 billion, roughly 100,000 a day for 80 years. Oddly, most mammals get about a billion beats whatever their size, and we simply live long enough to spend more.",
     "source": "~2.5-3 billion beats over a lifetime; AHA ~2.6 billion; ~100,000/day."
   },
   {
     "id": "li-gut-brain",
     "topic": "life",
+    "visual": "spiral",
     "type": "concept",
     "hook": "You have a second brain, and it sits in your gut.",
     "body": "The gut wall holds over 500 million neurons, its own network that runs digestion without waiting for orders from your head. It keeps working even when its link to the brain is cut.",
@@ -388,9 +548,14 @@
   {
     "id": "ea-amazon-oxygen",
     "topic": "earth",
+    "visual": "leaf",
     "type": "predict",
     "prompt": "How much of the world's oxygen does the Amazon actually add?",
-    "options": ["About 20%", "About 6%", "Almost none"],
+    "options": [
+      "About 20%",
+      "About 6%",
+      "Almost none"
+    ],
     "correctIndex": 2,
     "reveal": {},
     "kicker": "Almost none, on balance. The forest breathes back nearly all the oxygen it makes. The 'lungs of the planet' line is a myth. Ocean plankton do most of the real work.",
@@ -399,6 +564,7 @@
   {
     "id": "ea-inner-core",
     "topic": "earth",
+    "visual": "core",
     "type": "concept",
     "hook": "Earth's core is as hot as the Sun's surface, yet solid.",
     "body": "The inner core sits near 5,400°C, hot enough to melt iron many times over. It stays solid because the pressure, over three million times the surface, packs the atoms too tightly to flow.",
@@ -407,9 +573,14 @@
   {
     "id": "ea-antarctica",
     "topic": "earth",
+    "visual": "snowflake",
     "type": "predict",
     "prompt": "Which is the driest desert on Earth?",
-    "options": ["The Sahara", "The Australian Outback", "Antarctica"],
+    "options": [
+      "The Sahara",
+      "The Australian Outback",
+      "Antarctica"
+    ],
     "correctIndex": 2,
     "reveal": {},
     "kicker": "Antarctica. A desert is defined by how little falls, not by heat, and its interior sees under 50 mm a year. It is the largest, driest desert on the planet.",
@@ -418,6 +589,7 @@
   {
     "id": "ea-mountain-roots",
     "topic": "earth",
+    "visual": "mountain",
     "type": "concept",
     "hook": "Mountains have hidden roots, deeper than they stand tall.",
     "body": "A mountain range floats on the mantle like an iceberg on water. The higher it rises, the deeper its crust pushes down, so beneath the Himalayas the crust reaches about 70 km instead of the usual 35.",

@@ -3,7 +3,7 @@
 import type { ConceptCard as ConceptCardType } from "@/lib/types";
 import { TOPIC_ACCENT } from "@/lib/types";
 import CardShell from "./CardShell";
-import CardMotif from "../CardMotif";
+import CardGlyph from "../CardGlyph";
 
 export default function ConceptCard({
   card,
@@ -19,7 +19,8 @@ export default function ConceptCard({
   return (
     <CardShell topic={card.topic} source={card.source} index={index} total={total}>
       <div key={active ? "on" : "off"} className={active ? "animate-rise" : ""}>
-        <CardMotif
+        <CardGlyph
+          name={card.visual}
           seed={card.id}
           accent={TOPIC_ACCENT[card.topic]}
           size={68}

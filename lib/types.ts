@@ -27,6 +27,9 @@ export type CardBase = {
   id: string;
   topic: Topic;
   source?: string;
+  /** Name of a glyph in the CardGlyph library that reflects the card's subject.
+   *  Falls back to a generative orbit sigil when unset. */
+  visual?: string;
 };
 
 export type ConceptCard = CardBase & {
