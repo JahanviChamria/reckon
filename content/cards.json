@@ -594,5 +594,284 @@
     "hook": "Mountains have hidden roots, deeper than they stand tall.",
     "body": "A mountain range floats on the mantle like an iceberg on water. The higher it rises, the deeper its crust pushes down, so beneath the Himalayas the crust reaches about 70 km instead of the usual 35.",
     "source": "Isostasy; crustal roots 70-90 km under high ranges vs ~35 km normal. Britannica."
+  },
+  {
+    "id": "sp-andromeda",
+    "topic": "space",
+    "type": "predict",
+    "prompt": "Andromeda is falling toward us. When the two galaxies meet, what happens to the stars?",
+    "options": [
+      "Countless stars collide",
+      "Almost none touch",
+      "Both galaxies explode"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Almost none touch. Stars are so far apart that the galaxies pass through each other like two clouds of gnats, merging over billions of years without a single crash.",
+    "source": "Milky Way-Andromeda merger in ~4.5 Gyr; stellar collisions near zero. NASA/Hubble 2012."
+  },
+  {
+    "id": "sp-saturn-hexagon",
+    "topic": "space",
+    "visual": "planet-rings",
+    "type": "concept",
+    "hook": "A six-sided storm caps Saturn's north pole.",
+    "body": "A jet stream there traces a near-perfect hexagon wide enough to swallow two Earths. It has held its shape and its corners since spacecraft first saw it in the 1980s.",
+    "source": "Saturn's polar hexagon ~29,000 km across, stable since Voyager. Cassini, NASA."
+  },
+  {
+    "id": "sp-footprints",
+    "topic": "space",
+    "type": "concept",
+    "hook": "The Apollo footprints will outlast every city on Earth.",
+    "body": "The Moon has no wind and no rain to wipe them away. Only the slow drizzle of micrometeorite dust will blur them, and that takes millions of years.",
+    "source": "No lunar atmosphere; erosion only by micrometeorite gardening over Myr. NASA."
+  },
+  {
+    "id": "ph-diamond-burn",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Set a diamond on fire in pure oxygen. What is left when it stops burning?",
+    "options": [
+      "A charred black lump",
+      "Nothing but gas",
+      "Diamonds cannot burn"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Nothing but gas. A diamond is pure carbon, so heated in oxygen it burns clean away to carbon dioxide and leaves no ash at all. Lavoisier proved it in the 1770s.",
+    "source": "Diamond combusts to CO2 at ~700-900°C in O2; Lavoisier's diamond experiments, 1770s."
+  },
+  {
+    "id": "ph-magnet-heat",
+    "topic": "physics",
+    "visual": "thermometer",
+    "type": "concept",
+    "hook": "Heat a magnet enough and it forgets it was one.",
+    "body": "Past a temperature called the Curie point, heat jostles the atomic magnets out of alignment and the material loses its pull. For iron that line sits near 770°C.",
+    "source": "Ferromagnetism vanishes above the Curie temperature; iron ~770°C."
+  },
+  {
+    "id": "ph-superfluid",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "Chill helium enough and it climbs out of its own cup.",
+    "body": "Below about 2 degrees above absolute zero, liquid helium turns superfluid and flows with zero friction. It creeps up the walls in a thin film and drains itself over the rim.",
+    "source": "Helium-4 superfluid transition at 2.17 K; Rollin film creep. Kapitza 1938."
+  },
+  {
+    "id": "li-dna-length",
+    "topic": "life",
+    "visual": "spiral",
+    "type": "predict",
+    "prompt": "Unravel the DNA coiled inside one of your cells. How long is the thread?",
+    "options": [
+      "A few centimeters",
+      "About 2 meters",
+      "Nearly a kilometer"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 2,
+      "unit": "meters"
+    },
+    "kicker": "About 2 meters, packed into a nucleus a few thousandths of a millimeter wide. Stretch out the DNA from all your cells and it would reach the Sun and back many times over.",
+    "source": "~2 m of DNA per human cell; nucleus ~6 µm. NHGRI."
+  },
+  {
+    "id": "li-shark-trees",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Sharks are older than trees.",
+    "body": "Sharks were already hunting the oceans about 450 million years ago. The first true trees did not rise on land until roughly 100 million years later, so sharks have watched forests come and go.",
+    "source": "Sharks ~450 Myr (Ordovician); earliest trees ~385 Myr (Archaeopteris)."
+  },
+  {
+    "id": "li-honey",
+    "topic": "life",
+    "visual": "droplet",
+    "type": "concept",
+    "hook": "Honey is the one food that never spoils.",
+    "body": "It holds almost no water, runs acidic, and gives off a trace of hydrogen peroxide, so microbes cannot grow in it. Archaeologists have tasted 3,000-year-old honey from Egyptian tombs and found it still good.",
+    "source": "Low water activity, low pH, glucose oxidase; edible honey in Egyptian tombs. Smithsonian."
+  },
+  {
+    "id": "ea-magnetic-flip",
+    "topic": "earth",
+    "visual": "globe",
+    "type": "concept",
+    "hook": "Earth's north and south magnetic poles have swapped hundreds of times.",
+    "body": "As molten rock cools it freezes in the direction the field points, leaving a record in the stone. It shows the poles trade places at wild intervals, the last full flip about 780,000 years ago.",
+    "source": "Geomagnetic reversals recorded in rock; last full reversal (Brunhes-Matuyama) ~780 kyr ago. USGS."
+  },
+  {
+    "id": "ea-raindrop",
+    "topic": "earth",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "A raindrop falling through the sky is actually shaped like...",
+    "options": [
+      "A pointed teardrop",
+      "A hamburger bun",
+      "A perfect sphere"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "A hamburger bun. Tiny drops stay round, but as they grow, rushing air flattens the bottom into a curved dome. The pointed teardrop is a shape rain never takes.",
+    "source": "Large raindrops flatten to a bun/parachute shape from air resistance. NASA/USGS."
+  },
+  {
+    "id": "ea-gold-core",
+    "topic": "earth",
+    "visual": "core",
+    "type": "concept",
+    "hook": "There is enough gold in Earth's core to bury the whole surface.",
+    "body": "As the young planet melted, dense metals sank and dragged nearly all its gold to the center. What is left there could coat every inch of the surface in a layer about knee-deep, forever out of reach.",
+    "source": "Most of Earth's gold sank to the core; enough to cover the surface ~0.5 m. Willbold et al. 2011, Nature."
+  },
+  {
+    "id": "sp-diamond-rain",
+    "topic": "space",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "Sink deep into Neptune, where pressure is crushing. What falls as rain down there?",
+    "options": [
+      "Liquid metal",
+      "Diamonds",
+      "Boiling acid"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Diamonds. The crushing pressure squeezes carbon out of the methane and packs it into solid gems that drift down toward the core. Labs have made it happen on cue.",
+    "source": "Diamond rain in ice giants; carbon from hydrocarbons under pressure. Kraus et al. 2017, Nature Astronomy."
+  },
+  {
+    "id": "sp-cold-weld",
+    "topic": "space",
+    "type": "concept",
+    "hook": "Two bare pieces of metal touching in space fuse into one.",
+    "body": "On Earth a thin skin of oxide from the air keeps them apart. In the clean vacuum of orbit the surfaces have no such coat, so the atoms cannot tell the two pieces apart and weld together.",
+    "source": "Cold welding of clean metals in vacuum; a real spacecraft hazard. ESA."
+  },
+  {
+    "id": "sp-comet-tail",
+    "topic": "space",
+    "type": "concept",
+    "hook": "A comet's tail does not trail behind it.",
+    "body": "The tail is blown by sunlight and the solar wind, so it always points away from the Sun. On the outbound leg of its orbit, the comet chases its own tail out into the dark.",
+    "source": "Comet tails point anti-sunward from radiation pressure and solar wind. NASA."
+  },
+  {
+    "id": "ph-light-glass",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Does light always move at the speed of light?",
+    "options": [
+      "Yes, always",
+      "No, it slows in glass",
+      "Only inside stars"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 200000,
+      "unit": "km/s in glass"
+    },
+    "kicker": "It slows down. Light hits its famous top speed only in a vacuum. Through glass it drops to about 200,000 km per second, and that drag is what bends a beam and makes a lens work.",
+    "source": "Light speed in glass ~c/1.5 ≈ 2×10^5 km/s; refraction from slowing."
+  },
+  {
+    "id": "ph-absolute-zero",
+    "topic": "physics",
+    "visual": "thermometer",
+    "type": "concept",
+    "hook": "Absolute zero can be approached forever but never reached.",
+    "body": "Cooling means taking heat away, and the closer you get to the bottom the more work each tiny step demands. Reaching the true floor would take an infinite number of them, so nothing ever quite arrives.",
+    "source": "Third law of thermodynamics; absolute zero (0 K, -273.15°C) unattainable."
+  },
+  {
+    "id": "ph-coldest-lab",
+    "topic": "physics",
+    "visual": "snowflake",
+    "type": "concept",
+    "hook": "The coldest place in the known universe is a lab on Earth.",
+    "body": "Deep space still glows at about 2.7 degrees above absolute zero, warmed by the afterlight of the Big Bang. Physicists have chilled tiny clouds of atoms to a fraction of a billionth of a degree, far colder than anywhere in the sky.",
+    "source": "CMB ~2.7 K; lab gases cooled to sub-nanokelvin. MIT/NASA Cold Atom Lab."
+  },
+  {
+    "id": "li-brain-power",
+    "topic": "life",
+    "visual": "spiral",
+    "type": "predict",
+    "prompt": "Your brain never stops working. How much power does it actually draw?",
+    "options": [
+      "About 20 watts",
+      "About 200 watts",
+      "About 2,000 watts"
+    ],
+    "correctIndex": 0,
+    "reveal": {
+      "animation": "countUp",
+      "value": 20,
+      "unit": "watts"
+    },
+    "kicker": "About 20 watts, roughly a dim light bulb. For that trickle of power it outruns any supercomputer at seeing, moving, and understanding the world.",
+    "source": "Human brain ~20 W, ~20% of resting metabolism. Scientific American."
+  },
+  {
+    "id": "li-jellyfish",
+    "topic": "life",
+    "visual": "cycle",
+    "type": "concept",
+    "hook": "One animal cheats death by growing young again.",
+    "body": "Under stress the tiny Turritopsis jellyfish rewinds its own cells to an earlier stage and starts its life over. In principle it can do this without limit, though predators and disease still catch up with it.",
+    "source": "Turritopsis dohrnii reverts to polyp stage via transdifferentiation; the 'immortal jellyfish'."
+  },
+  {
+    "id": "li-stomach-acid",
+    "topic": "life",
+    "visual": "droplet",
+    "type": "concept",
+    "hook": "Your stomach acid is strong enough to dissolve metal.",
+    "body": "It is hydrochloric acid, sour enough to eat through a thin razor blade. It does not eat you because the stomach relines itself with fresh cells every few days.",
+    "source": "Gastric acid pH ~1.5-3.5 (HCl); stomach lining renews every few days. Cleveland Clinic."
+  },
+  {
+    "id": "ea-continents-move",
+    "topic": "earth",
+    "visual": "globe",
+    "type": "predict",
+    "prompt": "The continents are drifting apart right now. How fast?",
+    "options": [
+      "They no longer move",
+      "As fast as your nails grow",
+      "As fast as you walk"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 4,
+      "unit": "cm / year"
+    },
+    "kicker": "About as fast as your fingernails grow, a few centimeters a year. It feels like nothing, but over millions of years it has torn oceans open and stacked whole mountain ranges.",
+    "source": "Plate motion ~2-5 cm/yr, comparable to fingernail growth. USGS."
+  },
+  {
+    "id": "ea-space-dust",
+    "topic": "earth",
+    "type": "concept",
+    "hook": "Thousands of tons of space dust settle on Earth every year.",
+    "body": "The planet sweeps up a steady rain of tiny meteorite grains as it circles the Sun. Roughly 5,000 tons of it drift down each year, some of it landing quietly on your roof and in your hair.",
+    "source": "~5,200 tons of micrometeorites reach the surface yearly. Rojas et al. 2021, Earth Planet. Sci. Lett."
+  },
+  {
+    "id": "ea-hum",
+    "topic": "earth",
+    "visual": "waves",
+    "type": "concept",
+    "hook": "Earth rings with a constant hum too low to hear.",
+    "body": "Even with no earthquakes, the planet quietly vibrates. Ocean waves drumming on the seafloor keep ringing it like a struck bell, at a pitch far below anything human ears can catch.",
+    "source": "Earth's continuous free oscillations (~2.9-4.5 mHz) driven by ocean waves. Rhie & Romanowicz 2004, Nature."
   }
 ]
