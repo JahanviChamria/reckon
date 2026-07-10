@@ -873,5 +873,293 @@
     "hook": "Earth rings with a constant hum too low to hear.",
     "body": "Even with no earthquakes, the planet quietly vibrates. Ocean waves drumming on the seafloor keep ringing it like a struck bell, at a pitch far below anything human ears can catch.",
     "source": "Earth's continuous free oscillations (~2.9-4.5 mHz) driven by ocean waves. Rhie & Romanowicz 2004, Nature."
+  },
+  {
+    "id": "ph-sky-blue",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "The sky is blue mainly because...",
+    "options": [
+      "It reflects the blue oceans",
+      "Air scatters blue light most",
+      "The air itself is tinted blue"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Sunlight hits the air and its short blue wavelengths scatter far more than the long red ones. That scattered blue reaches your eyes from every part of the sky at once. It is called Rayleigh scattering.",
+    "source": "Rayleigh scattering ∝ 1/λ^4; shorter blue wavelengths scatter most. NASA/Scientific American."
+  },
+  {
+    "id": "ph-terminal-velocity",
+    "topic": "physics",
+    "visual": "feather",
+    "type": "predict",
+    "prompt": "Jump from a plane and hold still. How fast do you keep falling?",
+    "options": [
+      "About 100 km/h",
+      "About 200 km/h",
+      "Faster and faster without limit"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 200,
+      "unit": "km/h"
+    },
+    "kicker": "About 200 km/h, then no faster. Air resistance grows with speed until it exactly cancels gravity, and from there you fall at a steady terminal velocity instead of speeding up.",
+    "source": "Human belly-to-earth terminal velocity ~55 m/s ≈ 200 km/h. Skydiving references."
+  },
+  {
+    "id": "ph-metal-cold",
+    "topic": "physics",
+    "visual": "thermometer",
+    "type": "predict",
+    "prompt": "A metal rail and a wooden bench sit in the same cold room. Which feels colder?",
+    "options": [
+      "The metal",
+      "The wood",
+      "They feel the same"
+    ],
+    "correctIndex": 0,
+    "reveal": {},
+    "kicker": "The metal, even though both are the same temperature. Metal pulls heat out of your hand hundreds of times faster than wood, and what you feel as cold is really that heat draining from your skin.",
+    "source": "Perceived cold tracks thermal conductivity, not temperature; metal conducts heat hundreds of times faster than wood."
+  },
+  {
+    "id": "ph-sound-steel",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Sound travels fastest through which of these?",
+    "options": [
+      "Air",
+      "Water",
+      "Steel"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 5120,
+      "unit": "m/s in steel"
+    },
+    "kicker": "Steel, at about 5,000 m/s, roughly 15 times faster than in air. Sound is a wave handed between molecules, and the tighter they are packed the quicker they pass it along.",
+    "source": "Speed of sound: air ~343, water ~1480, steel ~5120 m/s. Engineering references."
+  },
+  {
+    "id": "ph-apparent-depth",
+    "topic": "physics",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "Look straight down into a clear pool. How deep does it look next to its real depth?",
+    "options": [
+      "Deeper",
+      "Shallower",
+      "Exactly right"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 75,
+      "unit": "% of true depth"
+    },
+    "kicker": "About three quarters as deep. Light bends and speeds up as it leaves the water, so your eye traces it back to a point higher than the real floor. A 4 m pool looks about 3 m deep.",
+    "source": "Apparent depth = real depth / n, water n≈1.33, so ~75%. Optics references."
+  },
+  {
+    "id": "ph-coriolis-drain",
+    "topic": "physics",
+    "visual": "cycle",
+    "type": "predict",
+    "prompt": "Does a sink drain the opposite way in the Southern Hemisphere?",
+    "options": [
+      "Yes, always the reverse",
+      "No, it barely matters",
+      "Only right at the equator"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "No. Earth's spin does steer hurricanes, but at the size of a sink that force is thousands of times too weak. The basin's shape and whatever swirl the water already had decide which way it turns.",
+    "source": "Coriolis negligible at sink scale; direction set by basin geometry and residual motion. Snopes/Live Science."
+  },
+  {
+    "id": "ph-ice-floats",
+    "topic": "physics",
+    "visual": "snowflake",
+    "type": "predict",
+    "prompt": "Solid iron sinks in molten iron and solid wax sinks in melted wax. What does ice do in water?",
+    "options": [
+      "Sinks like the rest",
+      "Floats",
+      "Hangs in the middle"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 9,
+      "unit": "% less dense"
+    },
+    "kicker": "It floats, and water is the oddball. Freezing locks its molecules into an open lattice that takes up about 9% more room, so ice is lighter than the water it froze from. That is why lakes freeze top down and fish outlast the winter.",
+    "source": "Ice density 0.917 g/cm³, ~9% less than water; open hexagonal lattice. USGS/HyperPhysics."
+  },
+  {
+    "id": "ph-flame-color",
+    "topic": "physics",
+    "type": "predict",
+    "prompt": "Which part of a candle flame is hottest?",
+    "options": [
+      "The red-orange tip",
+      "The blue base",
+      "They are all equal"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "The blue base. Hotter, cleaner burning shifts a flame's color from dull red toward blue, so blue marks the most complete combustion and the highest heat, not the gentlest part.",
+    "source": "Blue flame (complete combustion) ~1500°C, hotter than red/orange. Britannica."
+  },
+  {
+    "id": "ph-boil-vacuum",
+    "topic": "physics",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "Can water boil while it is still cool enough to touch?",
+    "options": [
+      "No, boiling means hot",
+      "Yes, at low pressure",
+      "Only if it is salted"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Yes. A liquid boils when its vapor pressure matches the pressure pushing down on it, so drop the surrounding pressure far enough and room-temperature water bubbles away without ever getting hot.",
+    "source": "Water boils at 20°C when pressure falls to ~2.3 kPa, its vapor pressure. Physics references."
+  },
+  {
+    "id": "ph-doppler",
+    "topic": "physics",
+    "visual": "waves",
+    "type": "predict",
+    "prompt": "A siren drops in pitch as the ambulance races past you. What does the driver hear?",
+    "options": [
+      "The same drop in pitch",
+      "A steady, unchanging pitch",
+      "An even sharper drop"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "A steady tone. The pitch shift comes from the ambulance rushing toward you and then away, squeezing and then stretching the sound waves. The driver travels with the siren, so for them nothing changes.",
+    "source": "Doppler effect: the frequency shift depends on relative motion between source and listener."
+  },
+  {
+    "id": "ph-rainbow-circle",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "A rainbow is a full circle, and no one else sees yours.",
+    "body": "Every lit raindrop bends sunlight back to you at the same 42 degree angle, tracing a ring around the point straight opposite the Sun. The ground hides its lower half, so you catch an arc. Step sideways and different drops light up, making a rainbow that is yours alone.",
+    "source": "Primary rainbow at 42° from the antisolar point; each observer sees a unique set of drops. National Geographic/Scientific American."
+  },
+  {
+    "id": "ph-helium-voice",
+    "topic": "physics",
+    "visual": "balloon",
+    "type": "concept",
+    "hook": "Helium does not raise the pitch of your voice.",
+    "body": "Sound travels almost three times faster through helium than through air. Your vocal cords still buzz at the same rate, but the faster gas lifts the higher tones that ring inside your throat and mouth, so the voice turns thin and bright rather than genuinely higher.",
+    "source": "Sound in helium ~972 m/s vs 343 in air; shifts vocal-tract formants, not the fundamental pitch. Live Science."
+  },
+  {
+    "id": "ph-angular-momentum",
+    "topic": "physics",
+    "visual": "cycle",
+    "type": "concept",
+    "hook": "A spinning skater speeds up just by pulling in their arms.",
+    "body": "Spin is a stored quantity the body has to keep. Drawing the arms in packs that spin into a tighter circle, and to hold the total steady the skater has to turn faster. Fling the arms back out and they slow right down again.",
+    "source": "Conservation of angular momentum; shrinking the radius raises the spin rate."
+  },
+  {
+    "id": "ph-noise-cancel",
+    "topic": "physics",
+    "visual": "waves",
+    "type": "concept",
+    "hook": "Noise-cancelling headphones fight sound with more sound.",
+    "body": "A tiny microphone samples the noise heading for your ear, and the headphone plays back its exact mirror image, a wave with a peak wherever the noise has a trough. The two meet and flatten each other, and the roar drops toward silence.",
+    "source": "Active noise cancellation works by destructive interference with an anti-phase copy of the sound."
+  },
+  {
+    "id": "ph-moon-illusion",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "The Moon low on the horizon is not really bigger.",
+    "body": "Photograph it near the horizon and high overhead and the disc measures exactly the same width. The swelling you see is an illusion your brain builds, and after thousands of years of watching there is still no fully settled reason for why it happens.",
+    "source": "Moon illusion: angular size stays constant; cause still debated. NASA/Wikipedia."
+  },
+  {
+    "id": "ph-mirror-flip",
+    "topic": "physics",
+    "type": "concept",
+    "hook": "A mirror does not flip left and right.",
+    "body": "Raise your right hand and the reflection lifts the hand on the same side. A mirror reverses front to back, not left to right. It only reads as a left-right swap because that is how you would have to turn your own body to stand where the reflection appears to be.",
+    "source": "Mirrors invert the front-back axis, not left-right; classic optics explanation (Feynman)."
+  },
+  {
+    "id": "ph-scale-sand",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "A single grain of sand is built from tens of quintillions of atoms. Zoom from the grain down to one.",
+    "widget": "scaleZoom",
+    "params": {
+      "minExp": -10,
+      "maxExp": -3.3,
+      "startExp": -3.5
+    },
+    "source": "Grain of sand ~0.5 mm holds ~4×10^19 atoms; hydrogen atom ~1.1×10^-10 m."
+  },
+  {
+    "id": "ph-hang-time",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "Give the ball the same flick under Moon, Earth, and Jupiter gravity. Watch the arc and hang time change.",
+    "widget": "gravityToy",
+    "params": {},
+    "source": "Surface gravity: Moon 1.62, Earth 9.81, Jupiter 24.79 m/s². NASA planetary fact sheets."
+  },
+  {
+    "id": "ph-refract-water",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "Drag a beam of light into water. Watch it bend at the surface, the same trick that makes a pool look shallower than it is.",
+    "widget": "refract",
+    "params": {
+      "n1": 1.0,
+      "n2": 1.33,
+      "top": "air",
+      "bottom": "water",
+      "startAngle": 45
+    },
+    "source": "Snell's law n1 sinθ1 = n2 sinθ2; light bends toward the normal entering water (n≈1.33). Optics references."
+  },
+  {
+    "id": "ph-total-internal",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "Send a beam through glass toward the air beyond. Past a sharp angle it cannot cross and reflects entirely back. That trap is how fiber optics carry light.",
+    "widget": "refract",
+    "params": {
+      "n1": 1.5,
+      "n2": 1.0,
+      "top": "glass",
+      "bottom": "air",
+      "startAngle": 55
+    },
+    "source": "Total internal reflection past the critical angle asin(n2/n1); glass→air ≈42°. Basis of fiber optics."
+  },
+  {
+    "id": "ph-interference",
+    "topic": "physics",
+    "type": "interactive",
+    "question": "Two ripples spread and overlap. Slide the sources apart and find the still lines where every crest lands on a trough.",
+    "widget": "interfere",
+    "params": {
+      "sep": 70,
+      "wavelength": 26
+    },
+    "source": "Two-source (double-slit) interference; waves cancel along nodal lines where paths differ by half a wavelength. Ripple-tank demonstration."
   }
 ]

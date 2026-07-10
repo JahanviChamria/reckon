@@ -6,12 +6,16 @@ import MoonDistance from "./MoonDistance";
 import ScaleZoom from "./ScaleZoom";
 import DeepTime from "./DeepTime";
 import GravityToy from "./GravityToy";
+import Refract from "./Refract";
+import Interfere from "./Interfere";
 
 const REGISTRY: Record<WidgetName, React.ComponentType<WidgetProps>> = {
   moonDistance: MoonDistance,
   scaleZoom: ScaleZoom,
   deepTime: DeepTime,
   gravityToy: GravityToy,
+  refract: Refract,
+  interfere: Interfere,
 };
 
 export default function Widget({

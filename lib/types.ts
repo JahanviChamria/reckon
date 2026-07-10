@@ -19,7 +19,13 @@ export const TOPIC_ACCENT: Record<Topic, string> = {
   earth: "#e0a860",
 };
 
-export type WidgetName = "scaleZoom" | "moonDistance" | "gravityToy" | "deepTime";
+export type WidgetName =
+  | "scaleZoom"
+  | "moonDistance"
+  | "gravityToy"
+  | "deepTime"
+  | "refract"
+  | "interfere";
 
 export type WidgetParams = Record<string, number | string>;
 
