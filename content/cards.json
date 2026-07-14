@@ -1127,7 +1127,7 @@
     "question": "Drag a beam of light into water. Watch it bend at the surface, the same trick that makes a pool look shallower than it is.",
     "widget": "refract",
     "params": {
-      "n1": 1.0,
+      "n1": 1,
       "n2": 1.33,
       "top": "air",
       "bottom": "water",
@@ -1143,7 +1143,7 @@
     "widget": "refract",
     "params": {
       "n1": 1.5,
-      "n2": 1.0,
+      "n2": 1,
       "top": "glass",
       "bottom": "air",
       "startAngle": 55
@@ -1161,5 +1161,244 @@
       "wavelength": 26
     },
     "source": "Two-source (double-slit) interference; waves cancel along nodal lines where paths differ by half a wavelength. Ripple-tank demonstration."
+  },
+  {
+    "id": "li-mantis-vision",
+    "topic": "life",
+    "type": "concept",
+    "hook": "The mantis shrimp has 12 color receptors and still loses to you at telling colors apart.",
+    "body": "Your eyes use three. In tests where shrimp were trained to pick a shade, they confused colors a human sorts with ease. The extra receptors seem to skip the brain's compare-and-blend step and read color in one fast pass instead.",
+    "source": "Thoen et al. 2014, Science: 12 photoreceptor classes, poor hue discrimination."
+  },
+  {
+    "id": "li-blue-whale-heart",
+    "topic": "life",
+    "visual": "heart",
+    "type": "concept",
+    "hook": "A blue whale's heart weighs about as much as two grown men.",
+    "body": "Around 180 kg, roughly the bulk of a small car's engine. The popular claim that a person could crawl through its arteries is wrong. The aorta is about 23 cm across, wide enough for a human head, not a body.",
+    "source": "Blue whale heart ~180-200 kg; aorta ~23 cm. Royal Ontario Museum."
+  },
+  {
+    "id": "li-naked-mole-rat",
+    "topic": "life",
+    "type": "concept",
+    "hook": "The naked mole rat shrugs off cancer, acid, and old age.",
+    "body": "It lives past 30 years where a mouse its size gets four, and no case of cancer has ever been found in one. A change to a single molecule in its pain nerves turns acid from a sting into an anaesthetic.",
+    "source": "Naked mole-rat lifespan >30 yr, cancer resistance via hyaluronan, acid insensitivity. Smithsonian; The Conversation."
+  },
+  {
+    "id": "li-axolotl",
+    "topic": "life",
+    "type": "concept",
+    "hook": "The axolotl regrows a lost leg with no scar.",
+    "body": "Cut off a limb and it rebuilds the bone, muscle, and nerves in weeks. It restores parts of its heart, spinal cord, and brain the same way, restarting the original growth program instead of patching over the wound.",
+    "source": "Axolotl (Ambystoma mexicanum) regenerates limbs, spinal cord, heart, and brain tissue. Developmental biology literature."
+  },
+  {
+    "id": "li-gut-area",
+    "topic": "life",
+    "visual": "spiral",
+    "type": "concept",
+    "hook": "Your gut's inner surface is the size of a studio apartment, not a tennis court.",
+    "body": "Textbooks long claimed a tennis court, near 300 square meters. Careful microscope measurements put it at 30 to 40, most of it the folded lining of the small intestine that soaks up your food.",
+    "source": "Helander & Fandriks 2014, Scand J Gastroenterol: digestive tract 30-40 m²."
+  },
+  {
+    "id": "li-single-photon",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Your eye can register a single particle of light.",
+    "body": "In a dark-adapted lab, people reported one photon striking the eye more often than chance allows. A rod cell fires on a lone photon, though the brain usually waits for several before it trusts the signal as light.",
+    "source": "Tinsley et al. 2016, Nature Communications: direct detection of a single photon by humans."
+  },
+  {
+    "id": "li-cornea",
+    "topic": "life",
+    "type": "concept",
+    "hook": "The front of your eye has no blood supply.",
+    "body": "Blood vessels would scatter the light on its way in, so the cornea stays glass-clear by going without them. It takes oxygen straight from the air and feeds on the fluid behind it instead.",
+    "source": "Cornea is avascular; oxygen from atmosphere, nutrients from aqueous humor and tears. American Academy of Ophthalmology."
+  },
+  {
+    "id": "li-goosebumps",
+    "topic": "life",
+    "type": "concept",
+    "hook": "Goosebumps are a leftover from fur you no longer have.",
+    "body": "A tiny muscle yanks each hair upright when you are cold or startled. In a furred animal that traps warm air or puffs the body up to look bigger. On bare human skin it just makes a bump.",
+    "source": "Arrector pili muscles; piloerection is a vestigial thermoregulatory and threat response."
+  },
+  {
+    "id": "li-arctic-tern",
+    "topic": "life",
+    "visual": "feather",
+    "type": "predict",
+    "prompt": "The Arctic tern makes the longest migration on Earth. How far each year?",
+    "options": [
+      "About 8,000 km",
+      "About 30,000 km",
+      "About 70,000 km"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 70000,
+      "unit": "km / year"
+    },
+    "kicker": "About 70,000 km, pole to pole and back on looping, wind-assisted routes. Over a full life a tern flies far enough to reach the Moon and most of the way back.",
+    "source": "Egevang et al. 2010, PNAS: average ~70,900 km/year round trip."
+  },
+  {
+    "id": "li-hummingbird-heart",
+    "topic": "life",
+    "visual": "heart",
+    "type": "predict",
+    "prompt": "How fast does a hovering hummingbird's heart beat?",
+    "options": [
+      "About 100 times a minute",
+      "About 400 times a minute",
+      "About 1,200 times a minute"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 1200,
+      "unit": "beats / min"
+    },
+    "kicker": "Up to about 1,200 a minute while hovering. Beating its wings 50 times a second burns fuel so fast the heart has to race to keep the muscles fed.",
+    "source": "Hummingbird heart rate up to ~1,200-1,260 bpm while hovering. Audubon."
+  },
+  {
+    "id": "li-peregrine",
+    "topic": "life",
+    "visual": "feather",
+    "type": "predict",
+    "prompt": "The fastest animal alive is the peregrine falcon in a dive. How fast can it go?",
+    "options": [
+      "About 120 km/h",
+      "About 250 km/h",
+      "Nearly 390 km/h"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 389,
+      "unit": "km/h"
+    },
+    "kicker": "A recorded dive hit 389 km/h. It folds into a teardrop and drops, and baffles in its nostrils slow the rushing air so it can still breathe at that speed.",
+    "source": "Peregrine falcon dive clocked at 389 km/h (242 mph). Guinness World Records."
+  },
+  {
+    "id": "li-wood-frog",
+    "topic": "life",
+    "visual": "snowflake",
+    "type": "predict",
+    "prompt": "Winter freezes a wood frog solid, heart stopped. Come spring it...",
+    "options": [
+      "Stays dead",
+      "Thaws and hops away",
+      "Recovers but stays paralyzed"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "It thaws and hops away. Before freezing it floods its cells with glucose, an antifreeze that keeps ice from forming inside them while up to two-thirds of the water outside them turns solid.",
+    "source": "Wood frog (Rana sylvatica) freeze tolerance via glucose cryoprotectant. National Park Service; Cornell."
+  },
+  {
+    "id": "li-mantis-punch",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "A mantis shrimp punches its prey underwater. What happens to the water itself?",
+    "options": [
+      "Nothing unusual",
+      "It briefly boils",
+      "It freezes around the claw"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "It briefly boils. The club accelerates like a bullet in a gun barrel, too fast for water to fill the space behind it, so vapor bubbles form and collapse in a flash of heat and light that stuns the prey a second time.",
+    "source": "Mantis shrimp strike ~23 m/s at 10,400 g; cavitation with sonoluminescence. Patek Lab, Duke University."
+  },
+  {
+    "id": "li-baby-bones",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "A newborn baby has how many bones, next to an adult's 206?",
+    "options": [
+      "Fewer, about 150",
+      "The same, 206",
+      "More, about 300"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 300,
+      "unit": "bones at birth"
+    },
+    "kicker": "About 300. Many begin as separate soft pieces so the baby can fold through the birth canal, then fuse into single bones as the child grows.",
+    "source": "Newborns have ~270-300 bones that fuse to 206 in adulthood. Cleveland Clinic."
+  },
+  {
+    "id": "li-nerve-speed",
+    "topic": "life",
+    "visual": "bolt",
+    "type": "predict",
+    "prompt": "How fast does a signal race along your quickest nerves?",
+    "options": [
+      "About 30 mph",
+      "About 100 mph",
+      "Over 250 mph"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 268,
+      "unit": "mph top speed"
+    },
+    "kicker": "Over 250 mph on the thickest, insulated nerves. The signal leaps between gaps in the insulation rather than crawling the whole length, which is how your hand leaves a hot stove before you feel the burn.",
+    "source": "Fastest myelinated nerves ~120 m/s (~268 mph) via saltatory conduction. Guinness World Records."
+  },
+  {
+    "id": "li-flavor-smell",
+    "topic": "life",
+    "type": "predict",
+    "prompt": "Pinch your nose shut and bite a flavored jelly bean. The flavor...",
+    "options": [
+      "Tastes stronger",
+      "Barely changes",
+      "Mostly vanishes"
+    ],
+    "correctIndex": 2,
+    "reveal": {},
+    "kicker": "Mostly vanishes. Your tongue only reports sweet, salty, sour, bitter, and savory. The rich part of flavor is smell, read by your nose from the back of your mouth, so blocking it flattens the taste to almost nothing.",
+    "source": "Retronasal olfaction dominates flavor; the tongue detects five basic tastes. Monell Chemical Senses Center."
+  },
+  {
+    "id": "li-scale-microbe",
+    "topic": "life",
+    "visual": "cell",
+    "type": "interactive",
+    "question": "A virus is almost too small to picture. Zoom out to the blood cell it would infect.",
+    "widget": "scaleZoom",
+    "params": {
+      "minExp": -7.5,
+      "maxExp": -4,
+      "startExp": -7
+    },
+    "source": "Coronavirus ~120 nm; human red blood cell ~8 µm; hair ~90 µm. The cell dwarfs the virus by roughly 60 times across."
+  },
+  {
+    "id": "li-scale-dna",
+    "topic": "life",
+    "visual": "spiral",
+    "type": "interactive",
+    "question": "Start at the width of your DNA and climb up to a whole cell.",
+    "widget": "scaleZoom",
+    "params": {
+      "minExp": -9,
+      "maxExp": -5,
+      "startExp": -8.6
+    },
+    "source": "DNA double helix ~2.4 nm wide; human cell tens of µm. NHGRI."
   }
 ]
