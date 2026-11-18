@@ -1400,5 +1400,54 @@
       "startExp": -8.6
     },
     "source": "DNA double helix ~2.4 nm wide; human cell tens of µm. NHGRI."
+  },
+  {
+    "id": "ea-vent-boil",
+    "topic": "earth",
+    "visual": "thermometer",
+    "type": "predict",
+    "prompt": "Seawater gushes from a deep-sea vent at over 700°F. What does it do?",
+    "options": [
+      "Flashes to steam at once",
+      "Boils, but the bubbles vanish in the cold",
+      "Stays liquid"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 370,
+      "unit": "°C, still liquid"
+    },
+    "kicker": "It stays liquid. At those depths the weight of the ocean pushes down so hard that water cannot expand into steam, even far above its surface boiling point.",
+    "source": "Hot seawater in hydrothermal vents does not boil because of the extreme pressure at the depths where the vents are formed; it may exceed 700°F (about 370°C). NOAA National Ocean Service, oceanservice.noaa.gov/facts/vents.html"
+  },
+  {
+    "id": "ea-sea-level-bumpy",
+    "topic": "earth",
+    "visual": "globe",
+    "type": "concept",
+    "hook": "Sea level is not level.",
+    "body": "Gravity pulls harder near mountains and other masses, so the ocean heaps up where gravity is strong and sinks where it is weak. Left undisturbed by tides and currents, the sea would settle into a lumpy shape called the geoid.",
+    "source": "Ocean would settle onto a smoothly undulating shape, rising where gravity is high and sinking where it is low. NOAA National Ocean Service, oceanservice.noaa.gov/facts/geoid.html"
+  },
+  {
+    "id": "ea-ocean-salt-balance",
+    "topic": "earth",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "Rivers dump about four billion tons of salt into the ocean every year. Is the ocean getting saltier?",
+    "options": [
+      "Yes, steadily, it only gains salt",
+      "Yes, but too slowly to measure",
+      "Probably not"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 4,
+      "unit": "billion tons of salt a year"
+    },
+    "kicker": "Probably not. Salt settles out onto the seafloor as sediment at about the rate rivers deliver it, so the books roughly balance.",
+    "source": "Rivers carry an estimated four billion tons of dissolved salts to the ocean annually; the ocean probably has a balanced salt input and output. NOAA National Ocean Service, oceanservice.noaa.gov/facts/riversnotsalty.html"
   }
 ]
