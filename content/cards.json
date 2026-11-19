@@ -1449,5 +1449,83 @@
     },
     "kicker": "Probably not. Salt settles out onto the seafloor as sediment at about the rate rivers deliver it, so the books roughly balance.",
     "source": "Rivers carry an estimated four billion tons of dissolved salts to the ocean annually; the ocean probably has a balanced salt input and output. NOAA National Ocean Service, oceanservice.noaa.gov/facts/riversnotsalty.html"
+  },
+  {
+    "id": "sp-corona-hot",
+    "topic": "space",
+    "visual": "sun",
+    "type": "predict",
+    "prompt": "Climb above the Sun's 5,500°C surface into its thin outer atmosphere. The temperature:",
+    "options": [
+      "Keeps falling as you leave the heat behind",
+      "Drops a little, then levels off",
+      "Jumps to hundreds of times hotter"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 2000000,
+      "unit": "°C in the corona"
+    },
+    "kicker": "The corona reaches about 2 million °C, roughly 360 times hotter than the surface below it. What heats it is still a major unsolved puzzle.",
+    "source": "NASA Sun Facts: corona up to 2 million °C; photosphere 5,500 °C; coronal heating a major unsolved puzzle. https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "sp-photon-escape",
+    "topic": "space",
+    "visual": "sun",
+    "type": "concept",
+    "hook": "Sunlight takes 8 minutes to reach you, after 170,000 years to leave the Sun.",
+    "body": "Energy made in the core cannot fly straight out. It is absorbed and re-emitted by dense plasma again and again, wandering outward for about 170,000 years to reach the top of the convection zone. The last 150 million km is the easy part.",
+    "source": "NASA Sun Facts: energy 'taking about 170,000 years to get from the core to the top of the convection zone.' https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "sp-red-dwarfs",
+    "topic": "space",
+    "visual": "star",
+    "type": "predict",
+    "prompt": "What is the most common kind of star in the Milky Way?",
+    "options": [
+      "Yellow stars like the Sun",
+      "Giant blue-white stars",
+      "Dim red dwarfs"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 75,
+      "unit": "% of all stars"
+    },
+    "kicker": "Red dwarfs, about 75% of the galaxy's stars. They burn their fuel so slowly they last trillions of years, so they pile up while bright stars burn out.",
+    "source": "NASA Stars Types: 'red dwarfs make up around 75% of the Milky Way galaxy's stellar population.' https://science.nasa.gov/universe/stars/types/"
+  },
+  {
+    "id": "sp-sun-spin",
+    "topic": "space",
+    "visual": "sun",
+    "type": "concept",
+    "hook": "The Sun's equator spins faster than its poles.",
+    "body": "The Sun has no solid surface, only plasma, so nothing forces it to turn as one piece. Its equator completes a rotation in 25 Earth days while its poles take 36.",
+    "source": "NASA Sun Facts: 'At its equator, the Sun completes one rotation in 25 Earth days... At its poles... every 36 Earth days.' https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "sp-sun-core-density",
+    "topic": "space",
+    "visual": "sun",
+    "type": "predict",
+    "prompt": "The Sun's core is a gas. How dense is it compared with solid gold?",
+    "options": [
+      "Far thinner, like air",
+      "About the same as gold",
+      "Several times denser than gold"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 150,
+      "unit": "g per cm³"
+    },
+    "kicker": "About 150 grams per cubic centimeter, roughly 8 times gold. The Sun's own weight squeezes the plasma hard, yet at 15 million °C it still behaves like a gas.",
+    "source": "NASA Sun Facts: core density about 150 g/cm³, temperatures top 15 million °C. https://science.nasa.gov/sun/facts/"
   }
 ]
