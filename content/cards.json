@@ -1527,5 +1527,72 @@
     },
     "kicker": "About 150 grams per cubic centimeter, roughly 8 times gold. The Sun's own weight squeezes the plasma hard, yet at 15 million °C it still behaves like a gas.",
     "source": "NASA Sun Facts: core density about 150 g/cm³, temperatures top 15 million °C. https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "ea-ocean-conveyor",
+    "topic": "earth",
+    "visual": "cycle",
+    "type": "concept",
+    "hook": "A drop of deep ocean water takes about a thousand years to go around.",
+    "body": "Near the poles, sea ice forms and leaves its salt behind, so the chilled water below turns dense and sinks. That sinking drives a slow global conveyor belt, and one cubic meter needs roughly 1,000 years to complete the loop.",
+    "source": "NOAA National Ocean Service: 'It is estimated that any given cubic meter of water takes about 1,000 years to complete the journey along the global conveyor belt.' https://oceanservice.noaa.gov/education/tutorial_currents/05conveyor2.html"
+  },
+  {
+    "id": "ea-young-seafloor",
+    "topic": "earth",
+    "visual": "layers",
+    "type": "concept",
+    "hook": "The ocean floor is Earth's youngest surface, and it keeps getting recycled.",
+    "body": "New seafloor forms at ridges and spreads outward until it meets another plate and slides beneath it. Because the oldest crust keeps being swallowed, very little of the seafloor is older than 150 million years.",
+    "source": "NOAA Science On a Sphere, Age of the Seafloor: 'Very little of the sea floor is older than 150 million years... the oldest sea floor is subducted under other plates.' https://sos.noaa.gov/catalog/datasets/age-of-the-seafloor-contour-lines/"
+  },
+  {
+    "id": "ea-tsunami-speed",
+    "topic": "earth",
+    "visual": "waves",
+    "type": "concept",
+    "hook": "In open ocean a tsunami can outrun a jet and you would barely notice it.",
+    "body": "A tsunami's speed is set by water depth, not by how far it has come, so across deep ocean it races along at jet speed. Out there it does not grow dramatically in height, which is why a ship can pass over one unaware.",
+    "source": "NOAA National Ocean Service: 'Tsunami waves may travel as fast as jet planes over deep waters.' 'Out in the depths of the ocean, tsunami waves do not dramatically increase in height.' https://oceanservice.noaa.gov/facts/tsunami.html"
+  },
+  {
+    "id": "ea-mauna-kea",
+    "topic": "earth",
+    "visual": "mountain",
+    "type": "predict",
+    "prompt": "Everest is the highest mountain. Measured base to peak, is anything taller?",
+    "options": [
+      "No, Everest is taller by any measure",
+      "Yes, but only by a few hundred meters",
+      "Yes, a Hawaiian volcano by over a kilometer"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 10210,
+      "unit": "m, base to peak"
+    },
+    "kicker": "Mauna Kea rises more than 10,210 meters from the Pacific seabed, against Everest's 8,848 meters above sea level. Most of the volcano is underwater, so sea level hides its height.",
+    "source": "NOAA National Ocean Service: 'Mauna Kea originates deep beneath the Pacific Ocean, and rises more than 10,210 meters from base to peak.' 'Reaching 8,848 meters at its summit, Everest is indeed the highest point above global mean sea level.' https://oceanservice.noaa.gov/facts/highestpoint.html"
+  },
+  {
+    "id": "ea-ridge-length",
+    "topic": "earth",
+    "visual": "globe",
+    "type": "predict",
+    "prompt": "What is the largest single volcanic feature on Earth?",
+    "options": [
+      "The Ring of Fire's Andes",
+      "Yellowstone's supervolcano",
+      "A chain of mountains on the ocean floor"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 40389,
+      "unit": "miles long"
+    },
+    "kicker": "The mid-ocean ridge winds 40,389 miles around the globe, and about 90 percent of it lies under the ocean. Plates pull apart there and molten rock rises to fill the gap.",
+    "source": "NOAA National Ocean Service: 'Spanning 40,389 miles around the globe'; 'the global mid-ocean ridge system forms the largest single volcanic feature on the Earth'; 'About 90 percent of the mid-ocean ridge system is under the ocean.' https://oceanservice.noaa.gov/facts/midoceanridge.html"
   }
 ]
