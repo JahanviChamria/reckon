@@ -1594,5 +1594,43 @@
     },
     "kicker": "The mid-ocean ridge winds 40,389 miles around the globe, and about 90 percent of it lies under the ocean. Plates pull apart there and molten rock rises to fill the gap.",
     "source": "NOAA National Ocean Service: 'Spanning 40,389 miles around the globe'; 'the global mid-ocean ridge system forms the largest single volcanic feature on the Earth'; 'About 90 percent of the mid-ocean ridge system is under the ocean.' https://oceanservice.noaa.gov/facts/midoceanridge.html"
+  },
+  {
+    "id": "ea-sofar-channel",
+    "topic": "earth",
+    "visual": "waves",
+    "type": "concept",
+    "hook": "The ocean has a pipe that carries sound for thousands of miles.",
+    "body": "At a certain depth, temperature and pressure make sound travel slowest. Waves that stray above or below bend back toward that layer, so low-frequency sound stays trapped and loses little energy over huge distances.",
+    "source": "NOAA National Ocean Service: 'SOFAR is an ocean \"channel\" that allows sound to carry great distances.' 'Sound can travel through a zone for hundreds, sometimes thousands of miles.' https://oceanservice.noaa.gov/facts/sofar.html"
+  },
+  {
+    "id": "ea-underwater-volcanoes",
+    "topic": "earth",
+    "visual": "globe",
+    "type": "predict",
+    "prompt": "Where does most of Earth's volcanic activity happen?",
+    "options": [
+      "Along the Ring of Fire's mountains",
+      "On big island volcanoes like Hawaii's",
+      "Beneath the ocean, mostly unseen"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 75,
+      "unit": "% underwater"
+    },
+    "kicker": "About three quarters of it is under the sea. Plates pull apart on the ocean floor and lava wells up in the gap, out of sight.",
+    "source": "USGS Hawaiian Volcano Observatory: submarine volcanoes 'carry out about 75 percent of Earth's volcanic activity.' https://www.usgs.gov/observatories/hvo/news/volcano-minute-a-quiet-eruption-beneath-pacific"
+  },
+  {
+    "id": "ea-liquid-core-waves",
+    "topic": "earth",
+    "visual": "core",
+    "type": "concept",
+    "hook": "We know Earth's core is liquid because earthquakes cast a shadow.",
+    "body": "Shear (S) waves cannot travel through liquid, while pressure (P) waves can, though they bend. Beyond about 104 degrees from a quake, seismographs hear no direct waves, and that blind zone exposed the liquid outer core.",
+    "source": "USGS: 'P waves travel through solid and liquid, but S waves do not travel through liquid.' 'The shadow zone is the area of the earth from angular distances of 104 to 140 degrees from a given earthquake.' https://www.usgs.gov/media/images/p-wave-and-s-wave-paths-through-earth ; https://www.usgs.gov/media/images/shadowzonegif"
   }
 ]
