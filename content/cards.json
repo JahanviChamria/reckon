@@ -1632,5 +1632,83 @@
     "hook": "We know Earth's core is liquid because earthquakes cast a shadow.",
     "body": "Shear (S) waves cannot travel through liquid, while pressure (P) waves can, though they bend. Beyond about 104 degrees from a quake, seismographs hear no direct waves, and that blind zone exposed the liquid outer core.",
     "source": "USGS: 'P waves travel through solid and liquid, but S waves do not travel through liquid.' 'The shadow zone is the area of the earth from angular distances of 104 to 140 degrees from a given earthquake.' https://www.usgs.gov/media/images/p-wave-and-s-wave-paths-through-earth ; https://www.usgs.gov/media/images/shadowzonegif"
+  },
+  {
+    "id": "sp-cosmic-recipe",
+    "topic": "space",
+    "visual": "star",
+    "type": "predict",
+    "prompt": "How much of the universe is ordinary matter: every star, planet and gas cloud?",
+    "options": [
+      "About half",
+      "About a quarter",
+      "About 5%"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 5,
+      "unit": "% of the universe"
+    },
+    "kicker": "Only about 5% is the normal matter we are made of. Dark matter makes up roughly 27% and dark energy about 68%, inferred from how galaxies move and how expansion speeds up.",
+    "source": "NASA Science, Dark Matter and Dark Energy: 'The universe is made up of three components: normal or visible matter (5%), dark matter (27%), and dark energy (68%).' https://science.nasa.gov/universe/dark-matter-dark-energy/"
+  },
+  {
+    "id": "sp-cmb-glow",
+    "topic": "space",
+    "visual": "star",
+    "type": "concept",
+    "hook": "The oldest light in the universe is still arriving, from every direction at once.",
+    "body": "For its first 380,000 years the universe was too hot and dense for light to travel far. When it cleared, light was released everywhere, and the expansion of space has since stretched it into a cold 2.7 K microwave glow.",
+    "source": "NASA Science, Big Bang and the Evolution of the Universe: 'The cosmic microwave background (CMB) originated just 380,000 years after the Big Bang' 'when the Universe was dense, hot, and opaque.' 'We observe that same light today, stretched by the expansion of the universe to a cold 2.7K glow.' https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/big-bang-and-the-evolution-of-the-universe/"
+  },
+  {
+    "id": "sp-sun-weight-loss",
+    "topic": "space",
+    "visual": "sun",
+    "type": "predict",
+    "prompt": "Fusion turns the Sun's mass into light. How much mass does it lose every second?",
+    "options": [
+      "None, fusion only rearranges atoms",
+      "A few thousand tonnes",
+      "About 4 million tonnes"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 4000000,
+      "unit": "tonnes per second"
+    },
+    "kicker": "About 4 billion kilograms every second. Four hydrogen nuclei weigh slightly more than the helium they fuse into, and the missing mass leaves as energy, as E=mc² says.",
+    "source": "NASA Science, Basics of Space Flight ch. 1: 'This reaction converts about 4 billion kilograms of mass to energy every second.' https://science.nasa.gov/learn/basics-of-space-flight/chapter1-1/"
+  },
+  {
+    "id": "sp-star-lifespan",
+    "topic": "space",
+    "visual": "star",
+    "type": "predict",
+    "prompt": "A giant star has far more fuel than a small red dwarf. Which one lives longer?",
+    "options": [
+      "The giant, it has far more fuel",
+      "About the same, they just differ in size",
+      "The red dwarf, by a huge margin"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 14,
+      "unit": "trillion years, a red dwarf's span"
+    },
+    "kicker": "Some massive stars last only a few million years, while some red dwarfs could shine for up to about 14 trillion. A bigger star must burn fuel faster to hold up against its own gravity, and that outpaces its bigger supply.",
+    "source": "NASA Science, Stars: 'some massive stars will live for only a few million years.' 'More massive stars must burn fuel at a higher rate.' NASA Science, Star Types: some red dwarfs 'have life spans longer than the current age of the universe, up to about 14 trillion years.' https://science.nasa.gov/universe/stars/ ; https://science.nasa.gov/universe/stars/types/"
+  },
+  {
+    "id": "sp-redshift-stretch",
+    "topic": "space",
+    "visual": "star",
+    "type": "concept",
+    "hook": "Distant galaxies look red because space stretched their light on the way here.",
+    "body": "Light leaving a far galaxy crosses a universe that is expanding the whole time. The expansion pulls each wave longer, shifting blue light toward red, and the longer the trip, the bigger the stretch.",
+    "source": "NASA Science, Hubble Cosmological Redshift: 'The universe is expanding, and that expansion stretches light traveling through space.' 'As space expands, galaxies move farther away from each other, and their light elongates while becoming a redder color.' https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-cosmological-redshift/"
   }
 ]
