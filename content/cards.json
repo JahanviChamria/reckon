@@ -1710,5 +1710,34 @@
     "hook": "Distant galaxies look red because space stretched their light on the way here.",
     "body": "Light leaving a far galaxy crosses a universe that is expanding the whole time. The expansion pulls each wave longer, shifting blue light toward red, and the longer the trip, the bigger the stretch.",
     "source": "NASA Science, Hubble Cosmological Redshift: 'The universe is expanding, and that expansion stretches light traveling through space.' 'As space expands, galaxies move farther away from each other, and their light elongates while becoming a redder color.' https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-cosmological-redshift/"
+  },
+  {
+    "id": "ea-atmospheric-river",
+    "topic": "earth",
+    "visual": "droplet",
+    "type": "predict",
+    "prompt": "A narrow band of moist air streams through the sky toward the poles. Next to the Mississippi River, the water vapor it carries is:",
+    "options": [
+      "A trickle, a small fraction of the river",
+      "About the same as the river",
+      "Many times the river's flow"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 15,
+      "unit": "times the Mississippi, at the high end"
+    },
+    "kicker": "Studies over the Pacific find 7 to 15 times the Mississippi's average daily discharge, carried as vapor. The Sun evaporates water near the equator and circulation funnels it into a narrow band about half a mile to a mile above the ground.",
+    "source": "USGS, Rivers in the Sky: 'Studies of atmospheric rivers over the Pacific have found that they transport water vapor at a rate equal to 7-15 times the average daily discharge of the Mississippi River.' https://www.usgs.gov/news/featured-story/rivers-sky-6-facts-you-should-know-about-atmospheric-rivers"
+  },
+  {
+    "id": "ea-ozone-thin",
+    "topic": "earth",
+    "visual": "layers",
+    "type": "concept",
+    "hook": "All the ozone shielding you from ultraviolet light would make a layer 3 millimeters thick.",
+    "body": "Ozone is a trace gas spread thinly through the stratosphere. Gathered into one layer, the global average of about 300 Dobson Units is only about 3 millimeters. Inside the Antarctic ozone hole it falls to around 100, as sunlight returning after polar winter drives reactions involving CFCs that destroy it.",
+    "source": "NASA Earth Observatory: 'Average ozone concentrations in the ozone hole are around 100 Dobson Units'; average ozone is about 300 Dobson Units, 'equivalent to a layer 3 millimeters (0.12 inches) thick.' https://science.nasa.gov/earth/earth-observatory/nasa-observes-the-antarctic-ozone-hole-6991/"
   }
 ]
