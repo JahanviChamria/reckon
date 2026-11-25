@@ -1739,5 +1739,63 @@
     "hook": "All the ozone shielding you from ultraviolet light would make a layer 3 millimeters thick.",
     "body": "Ozone is a trace gas spread thinly through the stratosphere. Gathered into one layer, the global average of about 300 Dobson Units is only about 3 millimeters. Inside the Antarctic ozone hole it falls to around 100, as sunlight returning after polar winter drives reactions involving CFCs that destroy it.",
     "source": "NASA Earth Observatory: 'Average ozone concentrations in the ozone hole are around 100 Dobson Units'; average ozone is about 300 Dobson Units, 'equivalent to a layer 3 millimeters (0.12 inches) thick.' https://science.nasa.gov/earth/earth-observatory/nasa-observes-the-antarctic-ozone-hole-6991/"
+  },
+  {
+    "id": "sp-voyager-proxima",
+    "topic": "space",
+    "visual": "star",
+    "type": "predict",
+    "prompt": "Voyager 1 is our farthest spacecraft, cruising at 61,000 km/h. Aim it at the nearest star, Proxima Centauri. How long is the trip?",
+    "options": [
+      "About 700 years",
+      "About 7,000 years",
+      "About 75,000 years"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 75000,
+      "unit": "years at Voyager's speed"
+    },
+    "kicker": "About 75,000 years. Proxima is 4.24 light-years away, roughly 40 trillion km, and Voyager covers just 17 km each second. It needed more than 49 years to cross a single light-day.",
+    "source": "Voyager 1 moves at 17.0 km/s (38,026.79 mph), reached one light-day from Earth on Nov. 18, 2026, and Proxima Centauri is 'about 4.24 light-years away'. 4.24 ly x 9.46 trillion km / 17.0 km/s is about 75,000 years (derived). NASA Science, https://science.nasa.gov/mission/voyager/voyager-1/ ; https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/"
+  },
+  {
+    "id": "sp-moon-shrinking",
+    "topic": "space",
+    "visual": "core",
+    "type": "concept",
+    "hook": "The Moon has shrunk by about 50 meters, and it is still shrinking.",
+    "body": "The Moon has been cooling since it formed, and a cooling interior contracts. The brittle crust cracks into thrust faults, where one slab rides up over its neighbor and leaves a cliff.",
+    "source": "In the last several hundred million years, the diameter of the Moon has gotten about 150 feet (50 meters) smaller; as it cools, it shrinks and its brittle surface breaks, forming thrust faults. NASA Science, Moonquakes, https://science.nasa.gov/moon/moonquakes/"
+  },
+  {
+    "id": "sp-parker-shield",
+    "topic": "space",
+    "visual": "thermometer",
+    "type": "predict",
+    "prompt": "The Sun's corona can top 1 million degrees Fahrenheit. NASA's Parker Solar Probe flies right through it. How hot does its shield get?",
+    "options": [
+      "Over a million degrees, like the corona",
+      "Only warm, since space is cold",
+      "About 1,800°F, far below the corona"
+    ],
+    "correctIndex": 2,
+    "reveal": {
+      "animation": "countUp",
+      "value": 1800,
+      "unit": "°F, the shield's expected peak"
+    },
+    "kicker": "About 1,800°F, hot but nowhere near the corona. That gas is extremely thin, so few particles hit the probe and little heat flows in, and behind the shield the instruments stay at room temperature.",
+    "source": "In the hot but low-density corona, the spacecraft's shield is expected to warm to 1,800 degrees Fahrenheit, keeping the instruments behind it shaded at a comfortable room temperature; the corona's heat can exceed 1 million degrees Fahrenheit. NASA Science, https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-makes-history-with-closest-pass-to-sun/"
+  },
+  {
+    "id": "sp-spirit-dust-devils",
+    "topic": "space",
+    "visual": "spiral",
+    "type": "concept",
+    "hook": "Dust devils on Mars once cleaned a rover's solar panels for free.",
+    "body": "A dust devil is a spinning column of warm, rising air whose fast winds kick loose dust into the vortex. In 2005 passing ones swept Spirit's panels and lifted its power from the usual 60 percent to 93 percent.",
+    "source": "The passing of dust devils that swept dust from the top of the solar panels increased power coming to Spirit from the usual 60% to 93%. NASA Science, https://science.nasa.gov/mission/mer-spirit/ ; Dust devils form by rising and rotating warm air pockets... faster moving air near the soil surface can cause sand grains to bounce and kick up dust. https://science.nasa.gov/photojournal/a-dust-devil-is-born"
   }
 ]
