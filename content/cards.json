@@ -1797,5 +1797,68 @@
     "hook": "Dust devils on Mars once cleaned a rover's solar panels for free.",
     "body": "A dust devil is a spinning column of warm, rising air whose fast winds kick loose dust into the vortex. In 2005 passing ones swept Spirit's panels and lifted its power from the usual 60 percent to 93 percent.",
     "source": "The passing of dust devils that swept dust from the top of the solar panels increased power coming to Spirit from the usual 60% to 93%. NASA Science, https://science.nasa.gov/mission/mer-spirit/ ; Dust devils form by rising and rotating warm air pockets... faster moving air near the soil surface can cause sand grains to bounce and kick up dust. https://science.nasa.gov/photojournal/a-dust-devil-is-born"
+  },
+  {
+    "id": "ea-perihelion-winter",
+    "topic": "earth",
+    "visual": "sun",
+    "type": "predict",
+    "prompt": "Earth is closest to the Sun in...",
+    "options": [
+      "July, the heat of northern summer",
+      "Early January, northern midwinter",
+      "Never: the orbit is a perfect circle"
+    ],
+    "correctIndex": 1,
+    "reveal": {
+      "animation": "countUp",
+      "value": 6,
+      "unit": "% more sunlight in January than July"
+    },
+    "kicker": "Early January, around the 3rd. We are farthest in early July. Distance barely matters: the 23.5° tilt of Earth's axis decides which hemisphere gets the direct sunlight.",
+    "source": "Perihelion occurs on or about January 3, aphelion on or about July 4; 'about a 6 percent increase in incoming solar radiation (insolation) from July to January'; axis tilted 23.5 degrees. NASA Earth Observatory, science.nasa.gov/earth/earth-observatory/milutin-milankovitch"
+  },
+  {
+    "id": "ea-two-high-tides",
+    "topic": "earth",
+    "visual": "waves",
+    "type": "predict",
+    "prompt": "The Moon sits on one side of Earth, yet most coasts get two high tides a day. Why?",
+    "options": [
+      "The Sun pulls up the second one",
+      "Inertia heaps water on the far side too",
+      "Earth's spin sloshes the sea back"
+    ],
+    "correctIndex": 1,
+    "reveal": {},
+    "kicker": "Inertia. The Moon's pull is weakest on the far side of Earth, so the ocean there is left behind and swells outward, making a second bulge opposite the first.",
+    "source": "'The bulge on the far side of the Earth is caused by inertia.' 'Coastal areas experience two low tides and two high tides every lunar day, or 24 hours and 50 minutes.' NOAA National Ocean Service, oceanservice.noaa.gov/facts/tidefrequency.html"
+  },
+  {
+    "id": "ea-green-sahara",
+    "topic": "earth",
+    "visual": "leaf",
+    "type": "concept",
+    "hook": "The Sahara was green and wet 6,000 years ago, and a wobble in Earth's orbit did it.",
+    "body": "Slow changes in Earth's orbit shifted how sunlight fell on the planet, which strengthened the North African monsoon and pushed its rains far north. Grassland and lakes spread across today's desert, until the orbit drifted back.",
+    "source": "'Roughly 11,000 to 5,000 years ago, during the African Humid Period, the Sahara Desert was likely far wetter and greener'; Milankovitch cycles were key drivers via shifts in the strength and position of the North African monsoon. NASA Earth Observatory, science.nasa.gov/earth/earth-observatory/water-for-a-desert-lake-in-algeria-153475/"
+  },
+  {
+    "id": "ea-deep-ocean-unseen",
+    "topic": "earth",
+    "visual": "droplet",
+    "type": "concept",
+    "hook": "Humans have seen less than 0.001% of the deep seafloor.",
+    "body": "More than 90% of the ocean is deep ocean, dark, cold and under crushing pressure, so reaching it takes a specially built vehicle. All the footage ever taken adds up to an area about the size of Rhode Island.",
+    "source": "'explorers have seen less than 0.001% of the deep ocean seafloor'; 'more than 90% of the ocean is deep ocean'. NOAA Ocean Exploration, oceanexplorer.noaa.gov/facts/explored.html (updated April 2026)"
+  },
+  {
+    "id": "ea-damaging-quakes",
+    "topic": "earth",
+    "visual": "layers",
+    "type": "concept",
+    "hook": "Earth has about 500,000 detectable earthquakes a year, and only 100 do damage.",
+    "body": "About 100,000 are strong enough for people to feel. The rest are too weak, or too far from anyone, to break a thing, so the ground is always shaking and almost never matters.",
+    "source": "'It is estimated that there are 500,000 detectable earthquakes in the world each year. 100,000 of those can be felt, and 100 of them cause damage.' USGS Cool Earthquake Facts, usgs.gov/programs/earthquake-hazards/cool-earthquake-facts"
   }
 ]
